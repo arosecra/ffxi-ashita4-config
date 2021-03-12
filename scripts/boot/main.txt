@@ -1,0 +1,9 @@
+/wait 60
+/echo Default.txt was executed..
+
+/load addons
+/addon load imguistyle
+/imguistyle load
+
+/addon load petparty
+/addon load macropalette

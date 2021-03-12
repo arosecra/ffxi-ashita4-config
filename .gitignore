@@ -1,0 +1,13 @@
+.gitrepos/
+addons/
+plugins/
+
+Ashita-cli.exe
+Ashita.dll
+bootloader/pol.exe
+config/ashita/
+config/boot/example.ini
+config/imgui.ini
+fonts/
+logs/
+scripts/default.txt
