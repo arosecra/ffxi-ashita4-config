@@ -11,3 +11,5 @@ config/imgui.ini
 fonts/
 logs/
 scripts/default.txt
+docs/
+resources/

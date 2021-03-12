@@ -1,7 +1,12 @@
 /wait 60
-/echo Default.txt was executed..
+/echo main.txt was executed..
 
-/load addons
+/load Addons
+/load Ashitacast
+/load Packer
+/load Shorthand
+/load Uberwarp
+
 /addon load imguistyle
 /imguistyle load
 
