@@ -1,0 +1,123 @@
+<!-- Automatically converted file for use with Ashitacast For Ashita4. -->
+<!-- Prior to using, please ctrl-f for '<!-- ATTN:' and review all notes. -->
+
+<ashitacast>
+
+	<sets>
+		<set name="MstrMelee">
+			<ammo>Ginsen</ammo>
+			<head augpath="B">Adhemar Bonnet +1</head> <!--STR+12,DEX+12,Attack+20-->
+			<body augpath="B">Adhemar Jacket +1</body> <!--STR+12,DEX+12,Attack+20-->
+			<hands augment="Accuracy+24,'Triple Atk.'+4,CHR+7,Attack+9">Herculean Gloves</hands>
+			<legs augment="STR+8,DEX+9,'Dbl.Atk.'+3,'Triple Atk.'+2">Samnuha Tights</legs>
+			<!-- ATTN: The node used to construct the following feet node had augments that could not be resolved. -->
+			<feet augment="unknown">Herculean Boots</feet>
+			<neck>Asperity Necklace</neck>
+			<waist augpath="A">Sailfi Belt +1</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Brutal Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<back>Ground. Mantle +1</back>
+		</set>
+		<set name="TH">
+			<head>Wh. Rarab Cap +1</head>
+			<hands augment="'Cure' potency +4%,Pet: DEX+10,'Treasure Hunter'+1">Herculean Gloves</hands>
+			<feet augment="Accuracy+1,Attack+1,'Rapid Shot'+3,'Treasure Hunter'+1,Mag. Acc.+10,'Mag.Atk.Bns.'+10">Herculean Boots</feet>
+			<waist>Chaac Belt</waist>
+		</set>
+		<set name="Tancho">
+			<main>Tancho</main>
+			<sub>Shuhansadamune</sub>
+		</set>
+		<set name="Tokko">
+			<main>Tokko Knife</main>
+			<sub>Shuhansadamune</sub>
+		</set>
+		<set name="AbysseaProcDagger">
+			<main>Chicken Knife II</main>
+			<sub>Legion Scutum</sub>
+		</set>
+		<set name="AbysseaProcSword">
+			<main>Save the Queen II</main>
+			<sub>Legion Scutum</sub>
+		</set>
+		<set name="AbysseaProcGreatSword">
+			<main>Lament</main>
+		</set>
+		<set name="AbysseaProcScythe">
+			<main>Lost Sickle</main>
+		</set>
+		<set name="AbysseaProcPolearm">
+			<main>Tzee Xicu's Blade</main>
+		</set>
+		<set name="AbysseaProcKatana">
+			<main>Trainee Burin</main>
+			<sub>Legion Scutum</sub>
+		</set>
+		<set name="AbysseaProcGreatKatana">
+			<main>Mutsunokami</main>
+		</set>
+		<set name="AbysseaProcClub">
+			<main>Soulflayer's Wand</main>
+			<sub>Legion Scutum</sub>
+		</set>
+		<set name="AbysseaProcStaff">
+			<main>Fed. Signet Staff</main>
+		</set>
+		<set name="WS">
+			<ammo>Ghastly Tathlum</ammo>
+			<head augment="'Mag.Atk.Bns.'+15,'Fast Cast'+5,Pet: Damage taken -4%">Taeon Chapeau</head>
+			<body augpath="B">Adhemar Jacket +1</body> <!--STR+12,DEX+12,Attack+20-->
+			<!-- ATTN: The node used to construct the following hands node had augments that could not be resolved. -->
+			<hands augment="unknown">Herculean Gloves</hands>
+			<legs augment="STR+8,DEX+9,'Dbl.Atk.'+3,'Triple Atk.'+2">Samnuha Tights</legs>
+			<!-- ATTN: The node used to construct the following feet node had augments that could not be resolved. -->
+			<feet augment="unknown">Herculean Boots</feet>
+			<neck>Fotia Gorget</neck>
+			<waist>Fotia Belt</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Friomisi Earring</ear2>
+			<ring1>Acumen Ring</ring1>
+			<ring2>Shneddick Ring</ring2>
+			<back>Ground. Mantle +1</back>
+		</set>
+		<packer>
+		</packer>
+	</sets>
+
+	<commands>
+	</commands>
+
+	<load>
+		<setvar name="Strategy" value="MstrMelee" />
+		<setvar name="IdleMain" value="Tancho" />
+	</load>
+
+	<default>
+		<equip set="$u_IdleMain" />
+		<equip set="$u_Strategy" />
+	</default>
+
+	<preranged>
+	</preranged>
+
+	<midranged>
+	</midranged>
+
+	<precast>
+		<equip set="FastCast" />
+	</precast>
+
+	<midcast>
+	</midcast>
+
+	<ability>
+	</ability>
+
+	<weaponskill>
+		<if ad_name="Aeolian Edge">
+			<equip set="WS" />
+		</if>
+	</weaponskill>
+
+</ashitacast>

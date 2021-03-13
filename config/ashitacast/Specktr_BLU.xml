@@ -1,0 +1,412 @@
+<!-- Automatically converted file for use with Ashitacast For Ashita4. -->
+<!-- Prior to using, please ctrl-f for '<!-- ATTN:' and review all notes. -->
+
+<ashitacast>
+
+	<sets>
+		<set name="FastCast">
+			<ammo>Sapience Orb</ammo>
+			<head augpath="D">Psycloth Tiara</head> <!--Mag. Acc.+20,'Fast Cast'+10,INT+7-->
+			<body augment="Pet: Evasion+23,'Fast Cast'+5,Pet: Damage taken -4%">Taeon Tabard</body>
+			<hands augment="Accuracy+14,Mag. Acc.+13,'Mag.Atk.Bns.'+13,'Fast Cast'+2">Leyline Gloves</hands>
+			<legs augpath="D">Psycloth Lappas</legs> <!--MP+80,Mag. Acc.+15,'Fast Cast'+7-->
+			<feet augment="Pet: DEF+25,'Fast Cast'+5,Pet: Damage taken -4%">Taeon Boots</feet>
+			<neck>Orunmila's Torque</neck>
+			<back>Swith Cape +1</back>
+			<ear1>Loquac. Earring</ear1>
+			<ear2>Enchntr. Earring +1</ear2>
+			<ring1>Prolix Ring</ring1>
+		</set>
+		<set name="TP">
+			<ammo>Ginsen</ammo>
+			<head augpath="B">Adhemar Bonnet +1</head> <!--STR+12,DEX+12,Attack+20-->
+			<body augpath="B">Adhemar Jacket +1</body> <!--STR+12,DEX+12,Attack+20-->
+			<hands augment="Accuracy+24,'Triple Atk.'+4,CHR+7,Attack+9">Herculean Gloves</hands>
+			<legs augment="STR+8,DEX+9,'Dbl.Atk.'+3,'Triple Atk.'+2">Samnuha Tights</legs>
+			<!-- ATTN: The node used to construct the following feet node had augments that could not be resolved. -->
+			<feet augment="unknown">Herculean Boots</feet>
+			<neck>Asperity Necklace</neck>
+			<waist>Sailfi Belt +1</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Brutal Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Petrov Ring</ring2>
+			<back augment="DEX+26,Accuracy+20,Attack+20,'Dbl.Atk.'+10">Rosmerta's Cape</back>
+		</set>
+		<set name="TP-High">
+			<ammo>Ginsen</ammo>
+			<head>Jhakri Coronal +2</head>
+			<body>Ayanmo Corazza +2</body>
+			<hands>Jhakri Cuffs +2</hands>
+			<legs>Aya. Cosciales +2</legs>
+			<!-- ATTN: The node used to construct the following feet node had augments that could not be resolved. -->
+			<feet augment="unknown">Herculean Boots</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Brutal Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Petrov Ring</ring2>
+			<back augment="DEX+26,Accuracy+20,Attack+20,'Dbl.Atk.'+10">Rosmerta's Cape</back>
+		</set>
+		<set name="MstrDT">
+			<ammo>Staunch Tathlum</ammo>
+			<head augment="Damage taken-4%,STR+3,Attack+9">Herculean Helm</head>
+			<body>Ayanmo Corazza +2</body>
+			<hands augment="Phys. dmg. taken -4%,Magic dmg. taken -4%,Rng.Acc.+10">Iuitl Wristbands +1</hands>
+			<legs>Aya. Cosciales +2</legs>
+			<feet augment="Attack+27,Damage taken-3%,Accuracy+14">Herculean Boots</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Flume Belt</waist>
+			<ear1>Ethereal Earring</ear1>
+			<ear2>Genmei Earring</ear2>
+			<ring1 augment="Magic dmg. taken -3%,Breath dmg. taken -3%,Phys. dmg. taken -4%">Dark Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back>Solemnity Cape</back>
+		</set>
+		<set name="CDC">
+			<!-- ATTN: ammo node had an invalid piece of equipment( Jukukik Feather).  Node was not imported. -->
+			<head augpath="B">Adhemar Bonnet +1</head> <!--STR+12,DEX+12,Attack+20-->
+			<body augpath="B">Adhemar Jacket +1</body> <!--STR+12,DEX+12,Attack+20-->
+			<hands>Jhakri Cuffs +2</hands>
+			<legs augment="STR+8,DEX+9,'Dbl.Atk.'+3,'Triple Atk.'+2">Samnuha Tights</legs>
+			<!-- ATTN: The node used to construct the following feet node had augments that could not be resolved. -->
+			<feet augment="unknown">Herculean Boots</feet>
+			<neck>Fotia Gorget</neck>
+			<waist>Fotia Belt</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Brutal Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Begrudging Ring</ring2>
+			<!-- ATTN: The node used to construct the following back node had augments that could not be resolved. -->
+			<back augment="unknown">Rosmerta's Cape</back>
+		</set>
+		<set name="BLU_PHYS">
+			<ammo>Ginsen</ammo>
+			<head>Jhakri Coronal +2</head>
+			<body>Jhakri Robe +2</body>
+			<!-- ATTN: The node used to construct the following hands node had augments that could not be resolved. -->
+			<hands augment="unknown">Herculean Gloves</hands>
+			<!-- ATTN: The node used to construct the following legs node had augments that could not be resolved. -->
+			<legs augment="unknown">Herculean Trousers</legs>
+			<feet>Aya. Gambieras +1</feet>
+			<neck>Deceiver's Torque</neck>
+			<waist>Fotia Belt</waist>
+			<ear1>Bladeborn Earring</ear1>
+			<ear2>Steelflash Earring</ear2>
+			<ring1>Apate Ring</ring1>
+			<ring2>Pyrosoul Ring</ring2>
+			<back>Vassal's Mantle</back>
+		</set>
+		<set name="BLU_MAB">
+			<ammo>Erlene's Notebook</ammo>
+			<head>Jhakri Coronal +2</head>
+			<body augpath="A">Amalric Doublet +1</body> <!--MP+80,Mag. Acc.+20,'Mag.Atk.Bns.'+20-->
+			<hands augpath="D">Amalric Gages +1</hands> <!--INT+12,Mag. Acc.+20,'Mag.Atk.Bns.'+20-->
+			<legs>Jhakri Slops +1</legs>
+			<feet>Jhakri Pigaches +1</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Yamabuki-no-Obi</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Acumen Ring</ring1>
+			<ring2>Jhakri Ring</ring2>
+			<back augment="INT+30,Mag. Acc+20,/Mag. Dmg.+20,'Mag.Atk.Bns.'+10">Rosmerta's Cape</back>
+		</set>
+		<set name="BLU_MACC">
+			<ammo>Hydrocera</ammo>
+			<head>Jhakri Coronal +2</head>
+			<body augpath="A">Amalric Doublet +1</body> <!--MP+80,Mag. Acc.+20,'Mag.Atk.Bns.'+20-->
+			<hands>Jhakri Cuffs +2</hands>
+			<legs>Jhakri Slops +1</legs>
+			<feet>Jhakri Pigaches +1</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Ethereal Earring</ear1>
+			<ear2>Genmei Earring</ear2>
+			<ring1>Jhakri Ring</ring1>
+			<ring2>Acumen Ring</ring2>
+			<back augment="INT+30,Mag. Acc+20,/Mag. Dmg.+20,'Mag.Atk.Bns.'+10">Rosmerta's Cape</back>
+		</set>
+		<set name="BLU_SKILL">
+			<ammo>Mavi Tathlum</ammo>
+			<head>Luh. Keffiyeh +1</head>
+			<body>Assim. Jubbah +2</body>
+			<hands>Rawhide Gloves</hands>
+			<legs>Hashishin Tayt +1</legs>
+			<feet>Luhlaza Charuqs +1</feet>
+			<neck>Deceiver's Torque</neck>
+			<back>Cornflower Cape</back>
+		</set>
+		<set name="BLU_DRK">
+			<ammo>Erlene's Notebook</ammo>
+			<head>Pixie Hairpin +1</head>
+			<body augpath="A">Amalric Doublet +1</body> <!--MP+80,Mag. Acc.+20,'Mag.Atk.Bns.'+20-->
+			<hands augpath="D">Amalric Gages +1</hands> <!--INT+12,Mag. Acc.+20,'Mag.Atk.Bns.'+20-->
+			<legs>Jhakri Slops +1</legs>
+			<feet>Jhakri Pigaches +1</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Yamabuki-no-Obi</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Archon Ring</ring1>
+			<ring2>Jhakri Ring</ring2>
+			<back augment="INT+30,Mag. Acc+20,/Mag. Dmg.+20,'Mag.Atk.Bns.'+10">Rosmerta's Cape</back>
+		</set>
+		<set name="Refresh">
+			<body>Jhakri Robe +2</body>
+			<hands augment="Mag. Acc.+33,CHR+3,'Refresh'+2,Accuracy+9,Attack+9,'Mag.Atk.Bns.'+5">Herculean Gloves</hands>
+		</set>
+		<set name="CurePot">
+			<ammo>Hydrocera</ammo>
+			<head augment="Damage taken-4%,STR+3,Attack+9">Herculean Helm</head>
+			<body>Pinga Tunic</body>
+			<hands augment="Enh. Mag. eff. dur. +6">Telchine Gloves</hands>
+			<legs augpath="D">Psycloth Lappas</legs> <!--MP+80,Mag. Acc.+15,'Fast Cast'+7-->
+			<feet>Jhakri Pigaches +1</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Gishdubar Sash</waist>
+			<back>Tempered Cape +1</back>
+			<ear1>Mendi. Earring</ear1>
+			<ear2>Lifestorm Earring</ear2>
+			<ring1>Levia. Ring</ring1>
+			<ring2>Levia. Ring</ring2>
+		</set>
+		<set name="EnhancingMagic">
+			<neck>Henic Torque</neck>
+			<head augment="Enh. Mag. eff. dur. +8">Telchine Cap</head>
+			<body augment="Enh. Mag. eff. dur. +8">Telchine Chas.</body>
+			<hands augment="Enh. Mag. eff. dur. +6">Telchine Gloves</hands>
+			<legs augment="Enh. Mag. eff. dur. +10">Telchine Braconi</legs>
+			<feet augment="Enh. Mag. eff. dur. +7">Telchine Pigaches</feet>
+			<neck>Henic Torque</neck>
+			<waist>Olympus Sash</waist>
+			<back>Merciful Cape</back>
+		</set>
+		<!-- ATTN: The node used to construct the following set node had an invalid attribute(base).  The attribute was discarded. -->
+		<set name="BatteryCharge">
+			<waist>Gishdubar Sash</waist>
+		</set>
+		<set name="TH">
+			<head>Wh. Rarab Cap +1</head>
+			<hands augment="'Cure' potency +4%,Pet: DEX+10,'Treasure Hunter'+1">Herculean Gloves</hands>
+			<feet augment="Accuracy+1,Attack+1,'Rapid Shot'+3,'Treasure Hunter'+1,Mag. Acc.+10,'Mag.Atk.Bns.'+10">Herculean Boots</feet>
+			<waist>Chaac Belt</waist>
+		</set>
+		<packer>
+		</packer>
+	</sets>
+
+	<commands>
+	</commands>
+
+	<load>
+		<setvar name="Strategy" value="TP" />
+		<setvar name="BluMagPhys" value="Foot Kick|Sprout Smack|Wild Oats|Power Attack|Queasyshroom|Battle Dance|Feather Storm|Head Butt|Helldive|Bludgeon|Claw Cyclone|Screwdriver|Grand Slam|Smite of Rage|Pinecone Bomb|Jet Stream|Uppercut|Terror Touch|Mandibular Bite|Sickle Slash|Dimensional Death|Spiral Spin|Death Scissors|Seedspray|Body Slam|Hydro Shot|Frypan|Frenetic Rip|Spinal Cleave|Tail Slap|Hysteric Barrage|Asuran Claws|Cannonball|Disseverment|Sub-zero Smash|Ram Charge|Vertical Cleave|Final Sting|Goblin Rush|Vanity Dive|Whirl of Rage|Benthic Typhoon|Quad. Continuum|Empty Thrash|Delta Thrust|Heavy Strike|Sudden Lunge|Quadrastrike|Tourbillion|Amorphic Spikes|Barbed Crescent|Bilgestorm|Bloodrake|Glutinous Dart|Paralyzing Triad|Thrashing Assault|Sinker Drill|Sweeping Gouge|Saurian Slide" />
+		<setvar name="BluMagMag" value="Subduction" />
+		<setvar name="BluMagDebuff" value="Filamented Hold|Cimicine Discharge|Demoralizing Roar|Venom Shell|Light of Penance|Sandspray|Auroral Drape|Frightful Roar|Enervation|Infrasonics|Lowing|Cold Wave|Awful Eye|Voracious Trunk|Sheep Song|Soporific|Yawn|Dream Flower|Chaotic Eye|Sound Blast|Blank Gaze|Stinking Gas|Geist Wall|Jettatura|Feather Tickle|Temporal Shift|Actinic Burst|Reaving Wind|Mortal Ray|Absolute Terror|Blistering Roar" />
+		<setvar name="BluMagBuff" value="Metallic Body|Cocoon|Refueling|Feather Barrier|Memento Mori|Zephyr Mantle|Diamondhide|Warm-Up|Amplification|Triumphant Roar|Saline Coat|Reactor Cool|Exuviation|Plasma Charge|Regeneration|Animating Wail|Magic Barrier|Fantod|Occultation|Winds of Promyvion|Barrier Tusk|Orcish Counterstance|Harden Shell|Pyric Bulwark|Nature\s Meditation|Carcharian Verve|Erratic Flutter|Restoral|Mighty Guard" />
+		<setvar name="BluMagCure" value="Pollen|Healing Breeze|Wild Carrot|Magic Fruit|White Wind|Plenilune Embrace" />
+		<setvar name="BluEnhDuration" value="Battery Charge" />
+	</load>
+
+	<default>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<ring2>Trizek Ring</ring2>
+			</equip>
+		</if>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<ring2>Capacity Ring</ring2>
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<ring2>Vocation Ring</ring2>
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<ring2>Facility Ring</ring2>
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+				<back augment="Cap. Point+37%,Mag. Acc.+1,DEF+4">Mecisto. Mantle</back>
+			</equip>
+		</if>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<ring1>Shneddick Ring</ring1>
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<ring2>Warp Ring</ring2>
+			</equip>
+		</if>
+		<equip set="$u_Strategy" />
+	</default>
+
+	<preranged>
+	</preranged>
+
+	<midranged>
+	</midranged>
+
+	<precast>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<ring2>Trizek Ring</ring2>
+			</equip>
+		</if>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<ring2>Capacity Ring</ring2>
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<ring2>Vocation Ring</ring2>
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<ring2>Facility Ring</ring2>
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+				<back augment="Cap. Point+37%,Mag. Acc.+1,DEF+4">Mecisto. Mantle</back>
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<ring2>Warp Ring</ring2>
+			</equip>
+		</if>
+		<equip set="FastCast" />
+	</precast>
+
+	<midcast>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<ring2>Trizek Ring</ring2>
+			</equip>
+		</if>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<ring2>Capacity Ring</ring2>
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<ring2>Vocation Ring</ring2>
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<ring2>Facility Ring</ring2>
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+				<back augment="Cap. Point+37%,Mag. Acc.+1,DEF+4">Mecisto. Mantle</back>
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<ring2>Warp Ring</ring2>
+			</equip>
+		</if>
+		<if ad_name="$u_BluMagPhys">
+			<equip set="BluPhys" />
+		</if>
+		<elseif ad_name="$u_BluMagDebuff">
+			<equip set="BLU_MACC" />
+		</elseif>
+		<elseif ad_name="Reactor Cool">
+			<equip set="EnhancingMagic" />
+		</elseif>
+		<elseif ad_name="Erratic Flutter">
+			<equip set="EnhancingMagic" />
+		</elseif>
+		<elseif ad_name="$u_BluMagBuff">
+			<equip set="BLU_SKILL" />
+		</elseif>
+		<elseif ad_name="$u_BluMagCure">
+			<equip set="CurePot" />
+		</elseif>
+		<elseif ad_name="Battery Charge">
+			<equip set="BatteryCharge" />
+		</elseif>
+		<elseif ad_skill="enhancingmagic">
+			<equip set="EnhancingMagic" />
+		</elseif>
+		<elseif ad_name="Cur*">
+			<equip set="CurePot" />
+		</elseif>
+		<elseif ad_name="Dia*">
+			<equip set="TH" />
+		</elseif>
+		<else>
+			<if ad_name="Evryone. Grudge|Tenebral Crush">
+				<equip set="BLU_DRK" lock="true" />
+			</if>
+			<else>
+				<equip set="BLU_MAB" />
+			</else>
+		</else>
+	</midcast>
+
+	<ability>
+	</ability>
+
+	<weaponskill>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<ring2>Trizek Ring</ring2>
+			</equip>
+		</if>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<ring2>Capacity Ring</ring2>
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<ring2>Vocation Ring</ring2>
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<ring2>Facility Ring</ring2>
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+				<back augment="Cap. Point+37%,Mag. Acc.+1,DEF+4">Mecisto. Mantle</back>
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<ring2>Warp Ring</ring2>
+			</equip>
+		</if>
+		<command>/echo weaponskill $ad_name</command>
+		<if ad_name="Savage Blade">
+			<equip set="Savage" />
+		</if>
+		<elseif ad_name="Chant du Cygne">
+			<equip set="CDC" />
+		</elseif>
+		<elseif ad_name="Sanguine Blade">
+			<equip set="Sanguine" />
+		</elseif>
+		<else>
+			<equip set="MultiWS" />
+		</else>
+	</weaponskill>
+
+</ashitacast>

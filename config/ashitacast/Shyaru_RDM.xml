@@ -1,0 +1,90 @@
+<!-- Automatically converted file for use with Ashitacast For Ashita4. -->
+<!-- Prior to using, please ctrl-f for '<!-- ATTN:' and review all notes. -->
+
+<ashitacast>
+
+	<sets>
+		<set name="Precast">
+			<ammo>Clarus Stone</ammo>
+			<!-- ATTN: The node used to construct the following head node had augments that could not be resolved. -->
+			<head augment="unknown">Vanya Hood</head>
+			<!-- ATTN: The node used to construct the following hands node had augments that could not be resolved. -->
+			<hands augment="unknown">Gende. Gages +1</hands>
+			<legs>Orvail Pants +1</legs>
+			<!-- ATTN: The node used to construct the following feet node had augments that could not be resolved. -->
+			<feet augment="unknown">Chironic Slippers</feet>
+			<waist>Embla Sash</waist>
+			<ear1>Loquac. Earring</ear1>
+			<ring1>Prolix Ring</ring1>
+			<back>Swith Cape +1</back>
+		</set>
+		<set name="Idle">
+			<head>Gende. Caubeen +1</head>
+			<body>Vrikodara Jupon</body>
+			<hands>Gende. Gages +1</hands>
+			<legs>Sifahir Slacks</legs>
+			<feet>Gende. Galosh. +1</feet>
+			<back>Tempered Cape +1</back>
+		</set>
+		<set name="Cure">
+			<ammo>Clarus Stone</ammo>
+			<!-- ATTN: The node used to construct the following head node had augments that could not be resolved. -->
+			<head augment="unknown">Gende. Caubeen +1</head>
+			<body>Vrikodara Jupon</body>
+			<!-- ATTN: The node used to construct the following hands node had augments that could not be resolved. -->
+			<hands augment="unknown">Gende. Gages +1</hands>
+			<!-- ATTN: The node used to construct the following legs node had augments that could not be resolved. -->
+			<legs augment="unknown">Chironic Hose</legs>
+			<!-- ATTN: The node used to construct the following feet node had augments that could not be resolved. -->
+			<feet augment="unknown">Gende. Galosh. +1</feet>
+			<waist>Bishop's Sash</waist>
+			<ear1>Handler's Earring</ear1>
+			<ear2>Meili Earring</ear2>
+			<back>Tempered Cape +1</back>
+			<ring1>Sirona's Ring</ring1>
+			<ring2>Metamorph Ring</ring2>
+		</set>
+	</sets>
+
+	<commands>
+	</commands>
+
+	<load>
+	</load>
+
+	<default>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<ring1>Shneddick Ring</ring1>
+			</equip>
+		</if>
+		<equip set="Idle" />
+	</default>
+
+	<preranged>
+		<equip>
+			<range></range>
+		</equip>
+	</preranged>
+
+	<precast>
+		<equip set="Precast" />
+	</precast>
+
+	<midcast>
+		<if ad_type="WhiteMagic">
+			<if ad_name="Cure*|Curaga*">
+				<equip set="Cure" />
+			</if>
+		</if>
+	</midcast>
+
+	<ability>
+	</ability>
+
+	<weaponskill>
+		<else>
+		</else>
+	</weaponskill>
+
+</ashitacast>

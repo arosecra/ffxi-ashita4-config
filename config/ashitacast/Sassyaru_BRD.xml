@@ -1,0 +1,133 @@
+<!-- Automatically converted file for use with Ashitacast For Ashita4. -->
+<!-- Prior to using, please ctrl-f for '<!-- ATTN:' and review all notes. -->
+
+<ashitacast>
+
+	<sets>
+		<set name="Precast">
+			<head>Vanya Hood</head>
+			<body>Inyanga Jubbah +1</body>
+			<hands>Gende. Gages +1</hands>
+			<legs>Orvail Pants +1</legs>
+			<feet>Telchine Pigaches</feet>
+			<neck>Voltsurge Torque</neck>
+			<ear1>Loquac. Earring</ear1>
+			<ring1>Prolix Ring</ring1>
+			<waist>Embla Sash</waist>
+			<back>Swith Cape +1</back>
+		</set>
+		<set name="SongPrecast">
+			<head>Vanya Hood</head>
+			<body>Inyanga Jubbah +1</body>
+			<hands>Gende. Gages +1</hands>
+			<legs>Gende. Spats +1</legs>
+			<feet>Telchine Pigaches</feet>
+			<neck>Voltsurge Torque</neck>
+			<ear1>Loquac. Earring</ear1>
+			<ring1>Prolix Ring</ring1>
+			<waist>Embla Sash</waist>
+			<back>Swith Cape +1</back>
+		</set>
+		<set name="Buff">
+			<head>Fili Calot</head>
+			<body>Fili Hongreline</body>
+			<hands>Fili Manchettes</hands>
+			<legs>Inyanga Shalwar +2</legs>
+			<feet>Brioso Slippers +2</feet>
+			<neck>Moonbow Whistle</neck>
+			<ear1>Musical Earring</ear1>
+			<waist>Corsette</waist>
+		</set>
+		<set name="Idle">
+			<head>Brioso Roundlet +1</head>
+			<body>Gende. Bilaut +1</body>
+			<hands>Gende. Gages +1</hands>
+			<legs>Inyanga Shalwar +2</legs>
+			<feet>Gende. Galosh. +1</feet>
+			<neck>Moonbow Whistle</neck>
+			<back>Swith Cape +1</back>
+		</set>
+		<set name="WindAcc">
+			<head>Inyanga Tiara</head>
+			<body>Inyanga Jubbah +1</body>
+			<hands>Inyanga Dastanas</hands>
+			<legs>Inyanga Shalwar +2</legs>
+			<feet>Inyanga Crackows</feet>
+			<neck>Moonbow Whistle</neck>
+			<waist>Corsette</waist>
+			<ear1>Musical Earring</ear1>
+			<ear2>Gersemi Earring</ear2>
+			<ring1>Inyanga Ring</ring1>
+			<ring2>Warp Ring</ring2>
+			<back>Swith Cape +1</back>
+		</set>
+		<set name="temp">
+			<!-- ATTN: The node used to construct the following main node had augments that could not be resolved. -->
+			<main augment="unknown">Kali</main>
+			<sub>Jody Shield</sub>
+			<!-- ATTN: The node used to construct the following range node had augments that could not be resolved. -->
+			<range augment="unknown">Gjallarhorn</range>
+			<head>Brioso Roundlet +1</head>
+			<!-- ATTN: The node used to construct the following hands node had augments that could not be resolved. -->
+			<hands augment="unknown">Gende. Gages +1</hands>
+			<!-- ATTN: The node used to construct the following feet node had augments that could not be resolved. -->
+			<feet augment="unknown">Gende. Galosh. +1</feet>
+			<neck>Moonbow Whistle</neck>
+			<waist>Corsette</waist>
+			<ear1>Musical Earring</ear1>
+			<ear2>Gersemi Earring</ear2>
+			<ring1>Shneddick Ring</ring1>
+			<ring2>Warp Ring</ring2>
+			<back>Swith Cape +1</back>
+		</set>
+	</sets>
+
+	<commands>
+	</commands>
+
+	<load>
+	</load>
+
+	<default>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<ring1>Shneddick Ring</ring1>
+			</equip>
+		</if>
+		<equip set="Idle" />
+	</default>
+
+	<preranged>
+		<equip>
+			<range></range>
+		</equip>
+	</preranged>
+
+	<precast>
+		<if ad_type="BardSong">
+			<equip set="SongPrecast" />
+		</if>
+		<else>
+			<equip set="Precast" />
+		</else>
+	</precast>
+
+	<midcast>
+		<if ad_type="BardSong">
+			<if ad_name="Pining Nocturne|Foe Requiem*|*Elegy|Magic Finale|*Threnody*">
+				<equip set="WindAcc" />
+				<return />
+			</if>
+			<equip set="Buff" />
+		</if>
+	</midcast>
+
+	<ability>
+	</ability>
+
+	<weaponskill>
+		<else>
+		</else>
+	</weaponskill>
+
+</ashitacast>

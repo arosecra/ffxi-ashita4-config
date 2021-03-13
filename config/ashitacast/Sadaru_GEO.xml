@@ -1,0 +1,113 @@
+<!-- Automatically converted file for use with Ashitacast For Ashita4. -->
+<!-- Prior to using, please ctrl-f for '<!-- ATTN:' and review all notes. -->
+
+<ashitacast>
+
+	<sets>
+		<set name="Precast">
+			<main>Solstice</main>
+			<sub>Chanter's Shield</sub>
+			<head>Merlinic Hood</head>
+			<body>Merlinic Jubbah</body>
+			<legs>Geo. Pants +1</legs>
+			<feet>Merlinic Crackows</feet>
+			<neck>Voltsurge Torque</neck>
+			<ear1>Loquac. Earring</ear1>
+			<ring1>Prolix Ring</ring1>
+			<back>Lifestream Cape</back>
+			<waist>Embla Sash</waist>
+		</set>
+		<set name="Idle">
+			<main>Idris</main>
+			<sub>Culminus</sub>
+			<head>Hagondes Hat +1</head>
+			<body>Jhakri Robe +2</body>
+			<hands>Geo. Mitaines +1</hands>
+			<legs>Hagondes Pants +1</legs>
+			<feet>Hag. Sabots +1</feet>
+			<neck>Sanctity Necklace</neck>
+			<ear1>Handler's Earring +1</ear1>
+			<ear2>Handler's Earring</ear2>
+			<ring2>Defending Ring</ring2>
+			<back>Nantosuelta's Cape</back>
+		</set>
+		<set name="ElementalMagic">
+			<main>Gada</main>
+			<sub>Culminus</sub>
+			<head>Merlinic Hood</head>
+			<body>Merlinic Jubbah</body>
+			<hands>Amalric Gages +1</hands>
+			<legs>Merlinic Shalwar</legs>
+			<feet>Jhakri Pigaches +2</feet>
+			<neck>Mizu. Kubikazari</neck>
+			<waist>Embla Sash</waist>
+			<ear1>Barkaro. Earring</ear1>
+			<ear2>Friomisi Earring</ear2>
+			<ring1>Metamor. Ring +1</ring1>
+			<ring2>Mujin Band</ring2>
+			<back>Nantosuelta's Cape</back>
+		</set>
+		<set name="GeomancyMagic">
+			<main>Idris</main>
+			<sub>Culminus</sub>
+			<head>Azimuth Hood</head>
+			<!-- ATTN: The node used to construct the following body node had augments that could not be resolved. -->
+			<body augment="unknown">Bagua Tunic +1</body>
+			<hands>Geo. Mitaines +2</hands>
+			<!-- ATTN: The node used to construct the following legs node had augments that could not be resolved. -->
+			<legs augment="unknown">Bagua Pants</legs>
+			<feet>Azimuth Gaiters</feet>
+			<ear1>Fulla Earring</ear1>
+			<ear2>Gna Earring</ear2>
+			<back>Nantosuelta's Cape</back>
+		</set>
+	</sets>
+
+	<commands>
+	</commands>
+
+	<load>
+	</load>
+
+	<default>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<ring1>Shneddick Ring</ring1>
+			</equip>
+		</if>
+		<equip set="Idle" />
+	</default>
+
+	<preranged>
+		<equip>
+			<range></range>
+		</equip>
+	</preranged>
+
+	<precast>
+		<equip set="Precast" />
+	</precast>
+
+	<midcast>
+		<if ad_type="WhiteMagic">
+			<if ad_name="Cure*|Curaga*">
+				<equip set="Cure" />
+			</if>
+		</if>
+		<elseif ad_skill="elementalmagic">
+			<equip set="ElementalMagic" />
+		</elseif>
+		<elseif ad_name="Indi*|Geo*">
+			<equip set="GeomancyMagic" />
+		</elseif>
+	</midcast>
+
+	<ability>
+	</ability>
+
+	<weaponskill>
+		<else>
+		</else>
+	</weaponskill>
+
+</ashitacast>

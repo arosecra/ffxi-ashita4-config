@@ -1,0 +1,168 @@
+<!-- Automatically converted file for use with Ashitacast For Ashita4. -->
+<!-- Prior to using, please ctrl-f for '<!-- ATTN:' and review all notes. -->
+
+<ashitacast>
+
+	<sets>
+		<set name="Idle">
+			<head augpath="B">Adhemar Bonnet +1</head> <!--STR+12,DEX+12,Attack+20-->
+			<body augpath="B">Adhemar Jacket +1</body> <!--STR+12,DEX+12,Attack+20-->
+			<hands augment="Accuracy+24,'Triple Atk.'+4,CHR+7,Attack+9">Herculean Gloves</hands>
+			<legs augment="STR+8,DEX+9,'Dbl.Atk.'+3,'Triple Atk.'+2">Samnuha Tights</legs>
+			<feet>Skulk. Poulaines +1</feet>
+			<neck>Asperity Necklace</neck>
+			<waist>Sailfi Belt +1</waist>
+			<ear1>Brutal Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Begrudging Ring</ring2>
+			<back>Ground. Mantle +1</back>
+		</set>
+		<set name="TP-On">
+			<head augpath="B">Adhemar Bonnet +1</head> <!--STR+12,DEX+12,Attack+20-->
+			<body augpath="B">Adhemar Jacket +1</body> <!--STR+12,DEX+12,Attack+20-->
+			<hands augment="Enhances 'Perfect Dodge' effect">Plun. Armlets +1</hands>
+			<legs augment="STR+8,DEX+9,'Dbl.Atk.'+3,'Triple Atk.'+2">Samnuha Tights</legs>
+			<feet>Skulk. Poulaines +1</feet>
+			<neck>Asperity Necklace</neck>
+			<!-- ATTN: The node used to construct the following waist node had augments that could not be resolved. -->
+			<waist augment="unknown">Sailfi Belt +1</waist>
+			<ear1>Brutal Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Begrudging Ring</ring2>
+			<back>Ground. Mantle +1</back>
+		</set>
+		<set name="TP-Off">
+			<head augpath="B">Adhemar Bonnet +1</head> <!--STR+12,DEX+12,Attack+20-->
+			<body augpath="B">Adhemar Jacket +1</body> <!--STR+12,DEX+12,Attack+20-->
+			<hands augment="Accuracy+24,'Triple Atk.'+4,CHR+7,Attack+9">Herculean Gloves</hands>
+			<legs augment="STR+8,DEX+9,'Dbl.Atk.'+3,'Triple Atk.'+2">Samnuha Tights</legs>
+			<feet>Skulk. Poulaines +1</feet>
+			<neck>Asperity Necklace</neck>
+			<waist>Sailfi Belt +1</waist>
+			<ear1>Brutal Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Begrudging Ring</ring2>
+			<back>Ground. Mantle +1</back>
+		</set>
+		<set name="MagWS">
+			<!-- ATTN: The node used to construct the following head node had augments that could not be resolved. -->
+			<head augment="unknown">Taeon Chapeau</head>
+			<body>Meg. Cuirie +1</body>
+			<!-- ATTN: The node used to construct the following hands node had augments that could not be resolved. -->
+			<hands augment="unknown">Herculean Gloves</hands>
+			<legs augment="'Mag.Atk.Bns.'+33,AGI+12,Mag. Acc.+19">Herculean Trousers</legs>
+			<feet augment="Mag. Acc.+19,'Mag.Atk.Bns.'+34,'Dbl.Atk.'+2,INT+7">Herculean Boots</feet>
+			<neck>Stoicheion Medal</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Hecate's Earring</ear1>
+			<ear2 augment="Attack+4,TP Bonus +250">Moonshade Earring</ear2>
+			<ring1>Acumen Ring</ring1>
+			<ring2 augment="'Mag.Atk.Bns.'+3,'Resist Blind'+2">Demon's Ring</ring2>
+			<back>Argocham. Mantle</back>
+		</set>
+		<set name="FstCst">
+			<!-- ATTN: The node used to construct the following body node had augments that could not be resolved. -->
+			<body augment="unknown">Taeon Tabard</body>
+			<!-- ATTN: The node used to construct the following hands node had augments that could not be resolved. -->
+			<hands augment="unknown">Leyline Gloves</hands>
+			<legs augment="'Mag.Atk.Bns.'+18,'Fast Cast'+2,Weapon skill damage +3%">Taeon Tights</legs>
+			<neck>Orunmila's Torque</neck>
+			<back>Swith Cape +1</back>
+			<ear1>Loquac. Earring</ear1>
+			<ear2>Enchntr. Earring +1</ear2>
+			<ring1>Prolix Ring</ring1>
+		</set>
+		<set name="StnSkn">
+			<!-- ATTN: The node used to construct the following head node had augments that could not be resolved. -->
+			<head augment="unknown">Valorous Mask</head>
+			<hands>Stone Mufflers</hands>
+			<legs>Haven Hose</legs>
+			<waist>Crudelis Belt</waist>
+			<ear1>Earthcry Earring</ear1>
+			<ear2>Lifestorm Earring</ear2>
+			<ring1>Levia. Ring</ring1>
+			<ring2>Levia. Ring</ring2>
+			<back>Merciful Cape</back>
+		</set>
+		<packer>
+		</packer>
+	</sets>
+
+	<commands>
+	</commands>
+
+	<load>
+		<setvar name="TH" value="On" />
+	</load>
+
+	<default>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<ring2>Trizek Ring</ring2>
+			</equip>
+		</if>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<ring2>Capacity Ring</ring2>
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<ring2>Vocation Ring</ring2>
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<ring2>Facility Ring</ring2>
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+				<back>Mecisto. Mantle</back>
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<ring2>Warp Ring</ring2>
+			</equip>
+		</if>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<ring1>Shneddick Ring</ring1>
+			</equip>
+		</if>
+		<equip set="Idle" />
+	</default>
+
+	<preranged>
+	</preranged>
+
+	<midranged>
+	</midranged>
+
+	<precast>
+		<command>/echo premagic $ad_name</command>
+		<equip set="FstCst" />
+	</precast>
+
+	<midcast>
+		<command>/echo midmagic $ad_name</command>
+		<if ad_name="Dia*">
+			<equip set="Th" />
+		</if>
+		<if ad_name="Cur*">
+			<equip set="CurePot" />
+		</if>
+	</midcast>
+
+	<ability>
+	</ability>
+
+	<weaponskill>
+		<equip set="MagWS" />
+	</weaponskill>
+
+</ashitacast>

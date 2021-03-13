@@ -1,0 +1,131 @@
+<!-- Automatically converted file for use with Ashitacast For Ashita4. -->
+<!-- Prior to using, please ctrl-f for '<!-- ATTN:' and review all notes. -->
+
+<ashitacast>
+
+	<sets>
+		<set name="Idle-Sub-Aegis">
+			<sub>Aegis</sub>
+		</set>
+		<set name="Idle-Sub-Priwen">
+			<sub>Priwen</sub>
+		</set>
+		<set name="Idle">
+			<head>Souv. Schaller +1</head>
+			<body>Souv. Cuirass +1</body>
+			<hands>Souv. Handsch. +1</hands>
+			<legs>Souv. Diechlings +1</legs>
+			<feet>Souveran Schuhs +1</feet>
+			<ammo>Staunch Tathlum</ammo>
+			<neck>Diemer Gorget</neck>
+			<waist>Isa Belt</waist>
+			<ear1>Handler's Earring</ear1>
+			<ear2>Handler's Earring +1</ear2>
+			<ring1>Moonbeam Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<!-- ATTN: The node used to construct the following back node had augments that could not be resolved. -->
+			<back augment="unknown">Rudianos's Mantle</back>
+		</set>
+		<set name="Precast">
+			<sub priority="1">Nibiru Shield</sub>
+			<ear1 priority="1">Odnowa Earring</ear1>
+			<ear2 priority="1">Tuisto Earring</ear2>
+			<ring1 priority="1">Moonbeam Ring</ring1>
+			<ring2 priority="1">Meridian Ring</ring2>
+			<waist priority="1">Steppe Sash</waist>
+			<!-- ATTN: The node used to construct the following back node had augments that could not be resolved. -->
+			<back augment="unknown">Rudianos's Mantle</back>
+			<body priority="1">Rev. Surcoat +2</body>
+			<ammo>Incantor Stone</ammo>
+			<head>Carmine Mask +1</head>
+			<hands>Odyssean Gauntlets</hands>
+			<feet>Odyssean Greaves</feet>
+			<neck>Voltsurge Torque</neck>
+		</set>
+		<set name="Phalanx">
+			<sub priority="1">Priwen</sub>
+			<ear2 priority="1">Tuisto Earring</ear2>
+			<hands priority="1">Souv. Handsch. +1</hands>
+			<feet priority="1">Souveran Schuhs +1</feet>
+			<ring1 priority="1">Moonbeam Ring</ring1>
+			<ring2 priority="1">Meridian Ring</ring2>
+			<neck priority="1">Dualism Collar +1</neck>
+			<head>Yorium Barbuta</head>
+			<body>Valorous Mail</body>
+			<legs>Yorium Cuisses</legs>
+			<ear1>Mimir Earring</ear1>
+			<waist>Olympus Sash</waist>
+			<back>Weard Mantle</back>
+		</set>
+		<set name="Enmity">
+			<sub priority="1">Priwen</sub>
+			<ear1 priority="1">Odnowa Earring</ear1>
+			<ear2 priority="1">Tuisto Earring</ear2>
+			<body priority="1">Rev. Surcoat +2</body>
+			<ring1 priority="1">Moonbeam Ring</ring1>
+			<ring2 priority="1">Meridian Ring</ring2>
+			<!-- ATTN: The node used to construct the following head node had augments that could not be resolved. -->
+			<head augment="unknown">Yorium Barbuta</head>
+			<!-- ATTN: The node used to construct the following hands node had augments that could not be resolved. -->
+			<hands augment="unknown">Yorium Gauntlets</hands>
+			<!-- ATTN: The node used to construct the following legs node had augments that could not be resolved. -->
+			<legs augment="unknown">Souv. Diechlings +1</legs>
+			<!-- ATTN: The node used to construct the following feet node had augments that could not be resolved. -->
+			<feet augment="unknown">Souveran Schuhs +1</feet>
+			<neck>Unmoving Collar</neck>
+			<!-- ATTN: The node used to construct the following back node had augments that could not be resolved. -->
+			<back augment="unknown">Rudianos's Mantle</back>
+		</set>
+		<packer>
+		</packer>
+	</sets>
+
+	<commands>
+	</commands>
+
+	<load>
+		<setvar name="IdleSub" value="Aegis" />
+	</load>
+
+	<default>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<ring1>Shneddick Ring</ring1>
+			</equip>
+		</if>
+		<equip set="Idle-Sub-$u_IdleSub" />
+		<equip set="Idle" />
+	</default>
+
+	<preranged>
+	</preranged>
+
+	<midranged>
+	</midranged>
+
+	<precast>
+		<equip set="Precast" />
+	</precast>
+
+	<midcast>
+		<if ad_name="Phalanx">
+			<equip set="Phalanx" />
+		</if>
+		<elseif ad_name="Flash|Blank Gaze|Jettatura">
+			<equip set="Enmity" />
+		</elseif>
+	</midcast>
+
+	<ability>
+	</ability>
+
+	<weaponskill>
+	</weaponskill>
+
+	<petskill>
+	</petskill>
+
+	<petspell>
+	</petspell>
+
+</ashitacast>
