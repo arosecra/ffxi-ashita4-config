@@ -1,6 +1,3 @@
-<!-- Automatically converted file for use with Ashitacast For Ashita4. -->
-<!-- Prior to using, please ctrl-f for '<!-- ATTN:' and review all notes. -->
-
 <ashitacast>
 
 	<sets>
@@ -26,7 +23,7 @@
 			<feet>Flam. Gambieras +2</feet>
 			<neck>Fotia Gorget</neck>
 			<waist>Fotia Belt</waist>
-			<ear2>Thrud Earring</ear2>
+			<ear1>Thrud Earring</ear1>
 			<ear2 augment="Attack+4,TP Bonus +250">Moonshade Earring</ear2>
 			<ring1>Apate Ring</ring1>
 			<ring2>Petrov Ring</ring2>
@@ -46,50 +43,9 @@
 
 	<load>
 		<setvar name="IdleMode" value="TP" />
-		<setvar name="BluMagPhys" value="Foot Kick|Sprout Smack|Wild Oats|Power Attack|Queasyshroom|Battle Dance|Feather Storm|Head Butt|Helldive|Bludgeon|Claw Cyclone|Screwdriver|Grand Slam|Smite of Rage|Pinecone Bomb|Jet Stream|Uppercut|Terror Touch|Mandibular Bite|Sickle Slash|Dimensional Death|Spiral Spin|Death Scissors|Seedspray|Body Slam|Hydro Shot|Frypan|Frenetic Rip|Spinal Cleave|Tail Slap|Hysteric Barrage|Asuran Claws|Cannonball|Disseverment|Sub-zero Smash|Ram Charge|Vertical Cleave|Final Sting|Goblin Rush|Vanity Dive|Whirl of Rage|Benthic Typhoon|Quad. Continuum|Empty Thrash|Delta Thrust|Heavy Strike|Sudden Lunge|Quadrastrike|Tourbillion|Amorphic Spikes|Barbed Crescent|Bilgestorm|Bloodrake|Glutinous Dart|Paralyzing Triad|Thrashing Assault|Sinker Drill|Sweeping Gouge|Saurian Slide" />
-		<setvar name="BluMagMag" value="Subduction" />
-		<setvar name="BluMagDebuff" value="Filamented Hold|Cimicine Discharge|Demoralizing Roar|Venom Shell|Light of Penance|Sandspray|Auroral Drape|Frightful Roar|Enervation|Infrasonics|Lowing|Cold Wave|Awful Eye|Voracious Trunk|Sheep Song|Soporific|Yawn|Dream Flower|Chaotic Eye|Sound Blast|Blank Gaze|Stinking Gas|Geist Wall|Jettatura|Feather Tickle|Temporal Shift|Actinic Burst|Reaving Wind|Mortal Ray|Absolute Terror|Blistering Roar" />
-		<setvar name="BluMagBuff" value="Metallic Body|Cocoon|Refueling|Feather Barrier|Memento Mori|Zephyr Mantle|Diamondhide|Warm-Up|Amplification|Triumphant Roar|Saline Coat|Reactor Cool|Exuviation|Plasma Charge|Regeneration|Animating Wail|Magic Barrier|Fantod|Occultation|Winds of Promyvion|Barrier Tusk|Orcish Counterstance|Harden Shell|Pyric Bulwark|Nature\s Meditation|Carcharian Verve|Erratic Flutter|Restoral|Mighty Guard" />
-		<setvar name="BluMagCure" value="Pollen|Healing Breeze|Wild Carrot|Magic Fruit|White Wind|Plenilune Embrace" />
-		<setvar name="BluEnhDuration" value="Battery Charge" />
 	</load>
 
 	<default>
-		<if eq_rring="Trizek Ring">
-			<equip lock="true">
-				<ring2>Trizek Ring</ring2>
-			</equip>
-		</if>
-		<if eq_rring="Capacity Ring">
-			<equip lock="true">
-				<ring2>Capacity Ring</ring2>
-			</equip>
-		</if>
-		<if eq_rring="Vocation Ring">
-			<equip lock="true">
-				<ring2>Vocation Ring</ring2>
-			</equip>
-		</if>
-		<if eq_rring="Facility Ring">
-			<equip lock="true">
-				<ring2>Facility Ring</ring2>
-			</equip>
-		</if>
-		<if eq_back="Mecisto. Mantle">
-			<equip lock="true">
-				<back augment="Cap. Point+37%,Mag. Acc.+1,DEF+4">Mecisto. Mantle</back>
-			</equip>
-		</if>
-		<if p_ismoving="True">
-			<equip lock="true">
-				<ring1>Shneddick Ring</ring1>
-			</equip>
-		</if>
-		<if eq_rring="Warp Ring">
-			<equip lock="true">
-				<ring2>Warp Ring</ring2>
-			</equip>
-		</if>
 		<equip set="$u_IdleMode" />
 	</default>
 
@@ -101,70 +57,10 @@
 	</midranged>
 
 	<precast>
-		<if eq_rring="Trizek Ring">
-			<equip lock="true">
-				<ring2>Trizek Ring</ring2>
-			</equip>
-		</if>
-		<if eq_rring="Capacity Ring">
-			<equip lock="true">
-				<ring2>Capacity Ring</ring2>
-			</equip>
-		</if>
-		<if eq_rring="Vocation Ring">
-			<equip lock="true">
-				<ring2>Vocation Ring</ring2>
-			</equip>
-		</if>
-		<if eq_rring="Facility Ring">
-			<equip lock="true">
-				<ring2>Facility Ring</ring2>
-			</equip>
-		</if>
-		<if eq_back="Mecisto. Mantle">
-			<equip lock="true">
-				<back augment="Cap. Point+37%,Mag. Acc.+1,DEF+4">Mecisto. Mantle</back>
-			</equip>
-		</if>
-		<if eq_rring="Warp Ring">
-			<equip lock="true">
-				<ring2>Warp Ring</ring2>
-			</equip>
-		</if>
 		<equip set="FastCast" />
 	</precast>
 
 	<midcast>
-		<if eq_rring="Trizek Ring">
-			<equip lock="true">
-				<ring2>Trizek Ring</ring2>
-			</equip>
-		</if>
-		<if eq_rring="Capacity Ring">
-			<equip lock="true">
-				<ring2>Capacity Ring</ring2>
-			</equip>
-		</if>
-		<if eq_rring="Vocation Ring">
-			<equip lock="true">
-				<ring2>Vocation Ring</ring2>
-			</equip>
-		</if>
-		<if eq_rring="Facility Ring">
-			<equip lock="true">
-				<ring2>Facility Ring</ring2>
-			</equip>
-		</if>
-		<if eq_back="Mecisto. Mantle">
-			<equip lock="true">
-				<back augment="Cap. Point+37%,Mag. Acc.+1,DEF+4">Mecisto. Mantle</back>
-			</equip>
-		</if>
-		<if eq_rring="Warp Ring">
-			<equip lock="true">
-				<ring2>Warp Ring</ring2>
-			</equip>
-		</if>
 		<if ad_name="Dia*">
 			<equip set="TH" />
 		</if>
@@ -174,36 +70,6 @@
 	</ability>
 
 	<weaponskill>
-		<if eq_rring="Trizek Ring">
-			<equip lock="true">
-				<ring2>Trizek Ring</ring2>
-			</equip>
-		</if>
-		<if eq_rring="Capacity Ring">
-			<equip lock="true">
-				<ring2>Capacity Ring</ring2>
-			</equip>
-		</if>
-		<if eq_rring="Vocation Ring">
-			<equip lock="true">
-				<ring2>Vocation Ring</ring2>
-			</equip>
-		</if>
-		<if eq_rring="Facility Ring">
-			<equip lock="true">
-				<ring2>Facility Ring</ring2>
-			</equip>
-		</if>
-		<if eq_back="Mecisto. Mantle">
-			<equip lock="true">
-				<back augment="Cap. Point+37%,Mag. Acc.+1,DEF+4">Mecisto. Mantle</back>
-			</equip>
-		</if>
-		<if eq_rring="Warp Ring">
-			<equip lock="true">
-				<ring2>Warp Ring</ring2>
-			</equip>
-		</if>
 		<command>/echo weaponskill $ad_name</command>
 		<equip set="WS" />
 	</weaponskill>

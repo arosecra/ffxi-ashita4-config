@@ -52,8 +52,7 @@
 			<body>Pitre Tobe +2</body>
 			<hands augment="Accuracy+24,'Triple Atk.'+4,CHR+7,Attack+9">Herculean Gloves</hands>
 			<legs augment="STR+8,DEX+9,'Dbl.Atk.'+3,'Triple Atk.'+2">Samnuha Tights</legs>
-			<!-- ATTN: The node used to construct the following feet node had augments that could not be resolved. -->
-			<feet augment="unknown">Herculean Boots</feet>
+			<feet augment="Accuracy+24,'Triple Atk.'+4,Attack+9">Herculean Boots</feet>
 			<neck>Shulmanu Collar</neck>
 			<waist>Klouskap Sash</waist>
 			<ear1>Brutal Earring</ear1>
@@ -101,73 +100,34 @@
 		<set name="WS">
 			<head>Tali'ah Turban +2</head>
 			<body>Tali'ah Manteel +1</body>
-			<!-- ATTN: The node used to construct the following hands node had augments that could not be resolved. -->
-			<hands augment="unknown">Herculean Gloves</hands>
-			<!-- ATTN: The node used to construct the following legs node had augments that could not be resolved. -->
-			<legs augment="unknown">Herculean Trousers</legs>
+			<hands augment="Accuracy+24,'Triple Atk.'+4,CHR+7,Attack+9">Herculean Gloves</hands>
+			<feet augment="Accuracy+24,'Triple Atk.'+4,Attack+9">Herculean Boots</feet>
 			<feet>Tali'ah Crackows +1</feet>
 			<neck>Asperity Necklace</neck>
-			<waist>Windbuffet Belt +1</waist>
+			<waist>Klouskap Sash</waist>
 			<ear1>Brutal Earring</ear1>
 			<ear2>Cessance Earring</ear2>
 			<ring1>Epona's Ring</ring1>
 			<ring2>Begrudging Ring</ring2>
 			<back>Dispersal Mantle</back>
 		</set>
-		<set name="PuppetArcuballista">
-			<head>Karagoz Capello</head>
-			<body>Tali'ah Manteel +1</body>
-			<hands>Tali'ah Gages +1</hands>
-			<!-- ATTN: The node used to construct the following legs node had augments that could not be resolved. -->
-			<legs augment="unknown">Herculean Trousers</legs>
-			<feet>Tali'ah Crackows +1</feet>
-			<neck>Shulmanu Collar</neck>
-			<waist>Klouskap Sash</waist>
-			<ear1>Domes. Earring</ear1>
-			<ear2>Cessance Earring</ear2>
-			<ring1>Varar Ring +1</ring1>
-			<ring2>Varar Ring +1</ring2>
-			<back>Dispersal Mantle</back>
-		</set>
-		<set name="PuppetProvoke">
-			<ear1>Rimeice Earring</ear1>
-			<ear2>Domes. Earring</ear2>
-		</set>
 		<packer>
 		</packer>
+		<set name="temp">
+			<main augpath="A">Ohtas</main> <!--Accuracy+70,Pet: Accuracy+70,Pet: Haste+10%-->
+			<range>Animator P +1</range>
+			<neck>Shulmanu Collar</neck>
+			<ear1>Brutal Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Varar Ring +1</ring2>
+			<back augment="Pet: Acc.+20,Pet: R.Acc.+20,Pet: Atk.+20,Pet: R.Atk.+20,Pet: Attack+10,Pet: Rng.Atk.+10,Pet: 'Regen'+10">Visucius's Mantle</back>
+			<waist>Klouskap Sash</waist>
+			<legs augment="STR+8,DEX+9,'Dbl.Atk.'+3,'Triple Atk.'+2">Samnuha Tights</legs>
+		</set>
 	</sets>
 
 	<commands>
-		<command input="/PuppetProvoke">
-			<equip set="PuppetProvoke" />
-			<!-- ATTN: The node used to construct the following gearlock node had an invalid attribute(lenght).  The attribute was discarded. -->
-			<gearlock />
-		</command>
-		<command input="/PuppetFlashbulb">
-			<equip set="PuppetFlashbulb" />
-			<!-- ATTN: The node used to construct the following gearlock node had an invalid attribute(lenght).  The attribute was discarded. -->
-			<gearlock />
-		</command>
-		<command input="/PuppetArcuballista">
-			<equip set="PuppetArcuballista" />
-			<!-- ATTN: The node used to construct the following gearlock node had an invalid attribute(lenght).  The attribute was discarded. -->
-			<gearlock />
-		</command>
-		<command input="/PuppetBone Crusher">
-			<equip set="PuppetBone Crusher" />
-			<!-- ATTN: The node used to construct the following gearlock node had an invalid attribute(lenght).  The attribute was discarded. -->
-			<gearlock />
-		</command>
-		<command input="/PuppetChimera Ripper">
-			<equip set="PuppetChimera Ripper" />
-			<!-- ATTN: The node used to construct the following gearlock node had an invalid attribute(lenght).  The attribute was discarded. -->
-			<gearlock />
-		</command>
-		<command input="/PuppetDaze">
-			<equip set="PuppetDaze" />
-			<!-- ATTN: The node used to construct the following gearlock node had an invalid attribute(lenght).  The attribute was discarded. -->
-			<gearlock />
-		</command>
 	</commands>
 
 	<load>
