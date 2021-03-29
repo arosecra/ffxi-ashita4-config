@@ -1,5 +1,5 @@
 /wait 15
-/echo main.txt was executed..
+/echo alt.txt was executed..
 
 /load Addons
 /load Ashitacast
@@ -10,6 +10,3 @@
 /addon load imguistyle
 /wait 5
 /imguistyle load
-
-/addon load petparty
-/addon load macropalette
