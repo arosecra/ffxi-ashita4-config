@@ -82,7 +82,7 @@
 	</load>
 
 	<default>
-		<if p_ismoving="True">
+		<if p_ismoving="true">
 			<equip lock="true">
 				<ring1>Shneddick Ring</ring1>
 			</equip>

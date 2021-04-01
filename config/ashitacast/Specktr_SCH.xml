@@ -214,7 +214,7 @@
 				<ring2>Warp Ring</ring2>
 			</equip>
 		</if>
-		<if p_ismoving="True">
+		<if p_ismoving="true">
 			<equip lock="true">
 				<ring1>Shneddick Ring</ring1>
 			</equip>

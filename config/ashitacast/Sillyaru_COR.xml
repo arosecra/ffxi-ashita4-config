@@ -57,7 +57,7 @@
 				<back augment="Cap. Point+37%,Mag. Acc.+1,DEF+4">Mecisto. Mantle</back>
 			</equip>
 		</if>
-		<if p_ismoving="True">
+		<if p_ismoving="true">
 			<equip lock="true">
 				<ring1>Shneddick Ring</ring1>
 			</equip>
