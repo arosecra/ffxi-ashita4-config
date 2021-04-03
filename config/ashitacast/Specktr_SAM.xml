@@ -46,6 +46,11 @@
 	</load>
 
 	<default>
+		<if p_ismoving="true">
+			<equip lock="true">
+				<ring1>Shneddick Ring</ring1>
+			</equip>
+		</if>
 		<equip set="$u_IdleMode" />
 	</default>
 
