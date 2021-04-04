@@ -1,4 +1,4 @@
-/ac disable rring
+/ac disable ring2
 /wait 1
 /equip ring2 "Trizek Ring"
 /wait 10
