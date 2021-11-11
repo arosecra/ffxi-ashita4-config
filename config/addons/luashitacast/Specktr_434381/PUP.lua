@@ -29,6 +29,9 @@ local sets = {
     Moving = {
         Ring1 = 'Shneddick Ring',
     },
+	Overdrive = {
+        Body = { Name = 'Pitre Tobe +2', AugTrial=5379 },
+	},
     WS = {
         Head = 'Tali\'ah Turban +2',
         Neck = 'Shulmanu Collar',
@@ -160,6 +163,10 @@ profile.HandleMidcast = function()
 		if string.match(action.Name, 'Dia') then
 			gFunc.EquipSet(sets.TH);
 		end
+	end
+	
+	if action.Skill == 'Overdrive') then
+		gFunc.EquipSet(sets.Overdrive);
 	end
 end
 
