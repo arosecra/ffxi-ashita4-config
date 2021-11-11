@@ -99,10 +99,9 @@
 		</set>
 		<set name="WS">
 			<head>Tali'ah Turban +2</head>
-			<body>Tali'ah Manteel +1</body>
+			<body>Tali'ah Manteel +2</body>
 			<hands augment="Accuracy+24,'Triple Atk.'+4,CHR+7,Attack+9">Herculean Gloves</hands>
 			<feet augment="Accuracy+24,'Triple Atk.'+4,Attack+9">Herculean Boots</feet>
-			<feet>Tali'ah Crackows +1</feet>
 			<neck>Asperity Necklace</neck>
 			<waist>Klouskap Sash</waist>
 			<ear1>Brutal Earring</ear1>
@@ -113,18 +112,6 @@
 		</set>
 		<packer>
 		</packer>
-		<set name="temp">
-			<main augpath="A">Ohtas</main> <!--Accuracy+70,Pet: Accuracy+70,Pet: Haste+10%-->
-			<range>Animator P +1</range>
-			<neck>Shulmanu Collar</neck>
-			<ear1>Brutal Earring</ear1>
-			<ear2>Cessance Earring</ear2>
-			<ring1>Epona's Ring</ring1>
-			<ring2>Varar Ring +1</ring2>
-			<back augment="Pet: Acc.+20,Pet: R.Acc.+20,Pet: Atk.+20,Pet: R.Atk.+20,Pet: Attack+10,Pet: Rng.Atk.+10,Pet: 'Regen'+10">Visucius's Mantle</back>
-			<waist>Klouskap Sash</waist>
-			<legs augment="STR+8,DEX+9,'Dbl.Atk.'+3,'Triple Atk.'+2">Samnuha Tights</legs>
-		</set>
 	</sets>
 
 	<commands>
