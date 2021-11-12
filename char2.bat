@@ -6,4 +6,4 @@ copy "%PLAYONLINE_HOME%\usr\all\chars1.bin" "%PLAYONLINE_HOME%\usr\all\login_w.b
 #copy "%ASHITA_HOME%\config\bootChars1\*" "%ASHITA_HOME%\config\boot"
 D:
 cd %ASHITA_HOME%
-%ASHITA_HOME%\Ashita-cli.exe char1.ini
+%ASHITA_HOME%\Ashita-cli.exe char2.ini
