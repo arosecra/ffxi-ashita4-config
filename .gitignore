@@ -1,6 +1,6 @@
 .gitrepos/
-addons/
-plugins/
+/addons/
+/plugins/
 
 Ashita-cli.exe
 Ashita.dll

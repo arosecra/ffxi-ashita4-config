@@ -17,7 +17,6 @@
 /addon load config
 /addon load distance
 /addon load enternity
-/addon load equipmon
 /addon load luashitacast
 
 /addon load extexec
