@@ -1,7 +1,8 @@
 /wait 15
 /echo main.txt was executed..
 
-/load Ashitacast
+/load Addons
+/load Multisend
 /load Packer
 /load Shorthand
 /load Uberwarp
@@ -10,5 +11,20 @@
 /wait 5
 /imguistyle load
 
+/addon load autojoin
+/addon load blusets
+/addon load cleancs
+/addon load config
+/addon load distance
+/addon load enternity
+/addon load equipmon
+/addon load luashitacast
+/addon load tparty
+
+/addon load extexec
+/addon load jobsettings
+/addon load jobhelper
 /addon load petparty
 /addon load macropalette
+/addon load sneak
+/addon load warptome

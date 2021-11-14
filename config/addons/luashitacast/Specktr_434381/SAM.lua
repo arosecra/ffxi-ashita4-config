@@ -1,6 +1,6 @@
 local profile = {};
 local sets = {
-    WS = {
+    WeaponSkill = {
         Head = 'Flam. Zucchetto +2',
         Neck = 'Fotia Gorget',
         Ear1 = { Name = 'Moonshade Earring', Augment = { [1] = 'TP Bonus +250', [2] = 'Attack+4' } },
@@ -28,7 +28,12 @@ local sets = {
         Legs = 'Wakido Haidate +3',
         Feet = 'Flam. Gambieras +2',
     },
-    TH = {
+    MidShot = {
+        Head = 'Wh. Rarab Cap +1',
+        Waist = 'Chaac Belt',
+		Hands = { Name = 'Valorous Mitts', Augment = { [1] = 'Pet: AGI+8', [2] = '"Treasure Hunter"+2', [3] = 'Accuracy+1', [4] = 'Mag. Acc.+1', [5] = 'Attack+1', [6] = '"Mag. Atk. Bns."+25' } },
+    },
+    Provoke = {
         Head = 'Wh. Rarab Cap +1',
         Waist = 'Chaac Belt',
 		Hands = { Name = 'Valorous Mitts', Augment = { [1] = 'Pet: AGI+8', [2] = '"Treasure Hunter"+2', [3] = 'Accuracy+1', [4] = 'Mag. Acc.+1', [5] = 'Attack+1', [6] = '"Mag. Atk. Bns."+25' } },
@@ -38,10 +43,10 @@ local sets = {
     },
 };
 
-local Settings = {
+local settings = {
 	Strategy='MstrMelee'
 }
-
+local common_profile = gFunc.LoadFile('common/common_logic.lua');
 profile.Sets = sets;
 
 profile.OnLoad = function()
@@ -55,46 +60,35 @@ profile.HandleCommand = function(args)
 end
 
 profile.HandleDefault = function()
-    local player = gData.GetPlayer();
-	if player.IsMoving then
-		gFunc.EquipSet(sets.Moving)
-	else
-		gFunc.EquipSet('TP_' .. Settings.Strategy);
-	end
+    common_profile.HandleDefault(sets, gFunc, settings)
 end
 
 profile.HandleAbility = function()
-	local action = gData.GetAction();
-	
-	if action.Name == 'Provoke' then
-		gFunc.EquipSet(sets.TH);
-	end
+    common_profile.HandleAbility(sets, gFunc, settings)
 end
 
 profile.HandleItem = function()
+    common_profile.HandleItem(sets, gFunc, settings)
 end
 
 profile.HandlePrecast = function()
+    common_profile.HandlePrecast(sets, gFunc, settings)
 end
 
 profile.HandleMidcast = function()
-	local action = gData.GetAction();
-	if(action.Skill == 'Enfeebling Magic') then
-		if string.match(action.Name, 'Dia') then
-			gFunc.EquipSet(sets.TH);
-		end
-	end
+    common_profile.HandleMidcast(sets, gFunc, settings)
 end
 
 profile.HandlePreshot = function()
+    common_profile.HandlePreshot(sets, gFunc, settings)
 end
 
 profile.HandleMidshot = function()
-	gFunc.EquipSet(sets.TH)
+    common_profile.HandleMidshot(sets, gFunc, settings)
 end
 
 profile.HandleWeaponskill = function()
-	gFunc.EquipSet(sets.WS)
+    common_profile.HandleWeaponskill(sets, gFunc, settings)
 end
 
 return profile;

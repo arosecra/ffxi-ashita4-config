@@ -1,13 +1,7 @@
 local profile = {};
 local sets = {
-    TH = {
-        Head = 'Wh. Rarab Cap +1',
-        Waist = 'Chaac Belt',
-    },
-    Moving = {
-        Ring1 = 'Shneddick Ring',
-    },
 };
+
 
 local settings = {
 	Strategy='MstrMelee'

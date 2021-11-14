@@ -2,11 +2,26 @@
 /echo alt.txt was executed..
 
 /load Addons
-/load Ashitacast
+/load Multisend
 /load Packer
 /load Shorthand
 /load Uberwarp
 
-/addon load imguistyle
+/addon load imguistyle2
 /wait 5
 /imguistyle load
+
+/addon load autojoin
+/addon load blusets
+/addon load cleancs
+/addon load config
+/addon load distance
+/addon load enternity
+/addon load equipmon
+/addon load luashitacast
+
+/addon load extexec
+/addon load jobsettings
+/addon load jobhelper
+/addon load sneak
+/addon load warptome
