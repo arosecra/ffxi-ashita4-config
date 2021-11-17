@@ -20,7 +20,6 @@
 /addon load luashitacast
 
 /addon load extexec
-/addon load jobsettings
 /addon load jobhelper
 /addon load sneak
 /addon load warptome

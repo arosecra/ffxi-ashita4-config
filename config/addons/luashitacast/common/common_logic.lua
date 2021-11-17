@@ -1,3 +1,4 @@
+require('common')
 local common_logic = {};
 
 common_logic.OnLoad = function(gSettings, gFunc, settings)
@@ -36,7 +37,13 @@ common_logic.HandleItem = function(sets, gFunc, settings)
 end
 
 common_logic.HandlePrecast = function(sets, gFunc, settings)
-	if sets.FastCast ~= nil then
+	local action = gData.GetAction();
+	local actionName = action.Name:gsub("%s+", "_");
+	local actionType = action.ActionType:gsub("%s+", "_");
+	local actionSkill = action.Skill:gsub("%s+", "_");
+	if actionSkill == 'Singing' and sets.SongFastCast ~= nil then
+		gFunc.EquipSet(sets.SongFastCast)	
+	elseif sets.FastCast ~= nil then
 		gFunc.EquipSet(sets.FastCast)
 	end
 end
@@ -46,10 +53,29 @@ common_logic.HandleMidcast = function(sets, gFunc, settings)
 	local actionName = action.Name:gsub("%s+", "_");
 	local actionType = action.ActionType:gsub("%s+", "_");
 	local actionSkill = action.Skill:gsub("%s+", "_");
-	if sets[actionSkill] ~= nil then
-		gFunc.EquipSet(sets[action.Skill]);
-	elseif sets[actionName] ~= nil then
-		gFunc.EquipSet(sets[action.Name]);
+	local actionFamily = actionName;
+	
+	if actionSkill == 'Singing' then
+		if actionName == 'Pining_Nocturne' or
+		   string.match(actionName, "Foe_Requiem") or
+		   string.match(actionName, "Elegy") or
+		   actionName == 'Magic_Finale' or
+		   string.match(actionName, "Threnody") then
+			actionFamily = 'SongAcc'
+		else
+			actionFamily = 'SongBuff'
+		end
+	end
+	
+	if sets[actionName] ~= nil then
+		gFunc.EquipSet(sets[actionName]);
+	elseif sets[actionFamily] ~= nil then
+		gFunc.EquipSet(sets[actionFamily])
+	elseif sets[actionSkill] ~= nil then
+		gFunc.EquipSet(sets[actionSkill]);
+	else 
+		print(actionSkill)
+		print(actionType)
 	end
 	
 end
