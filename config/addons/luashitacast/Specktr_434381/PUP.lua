@@ -123,6 +123,7 @@ profile.OnUnload = function()
 end
 
 profile.HandleCommand = function(args)
+	common_profile.HandleCommand(args, gFunc, settings)
 end
 
 profile.HandleDefault = function()

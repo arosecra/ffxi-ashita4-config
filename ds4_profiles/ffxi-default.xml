@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- DS4Windows Configuration Data. 04/04/2021 12:47:07 -->
+<!-- DS4Windows Configuration Data. 11/18/2021 22:32:34 -->
 <!-- Made with DS4Windows version 3.0.1 -->
 
 <DS4Windows app_version="3.0.1" config_version="5">
@@ -213,6 +213,7 @@
   <OutputContDevice>X360</OutputContDevice>
   <Control>
     <Button>
+      <L1>Unbound</L1>
       <L2>Unbound</L2>
       <R1>Unbound</R1>
       <R2>Unbound</R2>
@@ -242,7 +243,6 @@
       <RXPos>76</RXPos>
       <RYNeg>73</RYNeg>
       <RYPos>75</RYPos>
-      <L1>35</L1>
       <L3>82</L3>
       <R3>72</R3>
       <Square>70</Square>
@@ -255,6 +255,7 @@
       <DpadLeft>188</DpadLeft>
     </Key>
     <KeyType>
+      <L1>Unbound</L1>
       <L2>Unbound</L2>
       <R1>Unbound</R1>
       <R2>Unbound</R2>

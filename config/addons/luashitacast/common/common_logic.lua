@@ -9,6 +9,7 @@ common_logic.OnUnload = function(sets, gFunc, settings)
 end
 
 common_logic.HandleCommand = function(args, gFunc, Settings)
+	print(args[1])
 	if (args[1] == 'setvar') then
         Settings[args[2]] = args[3]
     end
