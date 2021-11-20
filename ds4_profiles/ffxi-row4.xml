@@ -213,14 +213,14 @@
   <OutputContDevice>X360</OutputContDevice>
   <Control>
     <Macro>
-      <Square>19/350/101/350/101/350/19</Square>
-      <Triangle>19/350/102/350/102/350/19</Triangle>
-      <Circle>19/350/104/350/104/350/19</Circle>
-      <Cross>19/350/103/350/103/350/19</Cross>
-      <DpadUp>19/350/98/350/98/350/19</DpadUp>
-      <DpadRight>19/350/100/350/100/350/19</DpadRight>
-      <DpadDown>19/350/99/350/99/350/19</DpadDown>
-      <DpadLeft>19/350/97/350/97/350/19</DpadLeft>
+      <Square>165/350/101/350/101/350/165</Square>
+      <Triangle>165/350/102/350/102/350/165</Triangle>
+      <Circle>165/350/104/350/104/350/165</Circle>
+      <Cross>165/350/103/350/103/350/165</Cross>
+      <DpadUp>165/350/98/350/98/350/165</DpadUp>
+      <DpadRight>165/350/100/350/100/350/165</DpadRight>
+      <DpadDown>165/350/99/350/99/350/165</DpadDown>
+      <DpadLeft>165/350/97/350/97/350/165</DpadLeft>
     </Macro>
     <Key>
       <PS>119</PS>

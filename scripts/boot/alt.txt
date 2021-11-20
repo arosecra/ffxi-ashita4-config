@@ -7,10 +7,6 @@
 /load Shorthand
 /load Uberwarp
 
-/addon load imguistyle2
-/wait 5
-/imguistyle load
-
 /addon load autojoin
 /addon load blusets
 /addon load cleancs

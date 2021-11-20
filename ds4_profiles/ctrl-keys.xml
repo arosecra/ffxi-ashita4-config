@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- DS4Windows Configuration Data. 11/10/2021 17:41:51 -->
+<!-- DS4Windows Configuration Data. 11/19/2021 17:36:59 -->
 <!-- Made with DS4Windows version 3.0.1 -->
 
 <DS4Windows app_version="3.0.1" config_version="5">
@@ -213,27 +213,22 @@
   <OutputContDevice>X360</OutputContDevice>
   <Control>
     <Macro>
-      <Square>161/350/101/350/101/350/161</Square>
-      <Triangle>161/350/102/350/102/350/161</Triangle>
-      <Circle>161/350/104/350/104/350/161</Circle>
-      <Cross>161/350/103/350/103/350/161</Cross>
-      <DpadUp>161/350/98/350/98/350/161</DpadUp>
-      <DpadRight>161/350/100/350/100/350/161</DpadRight>
-      <DpadDown>161/350/99/350/99/350/161</DpadDown>
-      <DpadLeft>161/350/97/350/97/350/161</DpadLeft>
+      <Share>160/160/162/162/91/91/164/164/165/165/93/93/163/163/161/161</Share>
+      <Options>97/97/98/98/99/99/100/100/101/101/102/102/103/103/104/104/105/105</Options>
     </Macro>
     <Key>
-      <PS>122</PS>
+      <Square>93</Square> <!-- Func -->
+      <Triangle>165</Triangle> <!-- RightAlt -->
+      <Circle>161</Circle> <!-- RightShift -->
+      <Cross>163</Cross> <!-- RightCtrl -->
+      <DpadUp>162</DpadUp>
+      <DpadRight>18</DpadRight>
+      <DpadDown>45</DpadDown>
+      <DpadLeft>16</DpadLeft>
     </Key>
     <KeyType>
-      <Square>Macro</Square>
-      <Triangle>Macro</Triangle>
-      <Circle>Macro</Circle>
-      <Cross>Macro</Cross>
-      <DpadUp>Macro</DpadUp>
-      <DpadRight>Macro</DpadRight>
-      <DpadDown>Macro</DpadDown>
-      <DpadLeft>Macro</DpadLeft>
+      <Share>Macro</Share>
+      <Options>Macro</Options>
     </KeyType>
   </Control>
   <ShiftControl />

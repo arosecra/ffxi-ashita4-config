@@ -43,7 +43,7 @@ local sets = {
         Hands = { Name = 'Souv. Handsch. +1', AugPath='D' },
         Ring1 = 'Moonbeam Ring',
         Ring2 = 'Meridian Ring',
-        Back = { Name = 'Weard Mantle', Augment = { [1] = 'Enmity+3', [2] = 'Phalanx +3', [3] = 'VIT+1', [4] = 'DEX+3' } },
+        Back = 'Weard Mantle',
         Waist = 'Steppe Sash',
         Legs = { Name = 'Yorium Cuisses', Augment = 'Phalanx +3' },
         Feet = { Name = 'Souveran Schuhs +1', AugPath='C' },
