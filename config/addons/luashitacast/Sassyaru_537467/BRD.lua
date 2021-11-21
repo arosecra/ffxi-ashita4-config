@@ -1,9 +1,6 @@
 local profile = {};
 local sets = {
     FastCast = {
-        Main = { Name = 'Kali', AugPath='D' },
-        Sub = 'Jody Shield',
-        Range = { Name = 'Gjallarhorn', AugTrial=3591 },
         Head = { Name = 'Vanya Hood', AugPath='D' },
         Neck = 'Voltsurge Torque',
         Ear1 = 'Loquac. Earring',
@@ -18,9 +15,6 @@ local sets = {
         Feet = { Name = 'Telchine Pigaches', Augment = '"Fast Cast"+5' },
     },
     SongFastCast = {
-        Main = { Name = 'Kali', AugPath='D' },
-        Sub = 'Jody Shield',
-        Range = { Name = 'Gjallarhorn', AugTrial=3591 },
         Head = { Name = 'Vanya Hood', AugPath='D' },
         Neck = 'Voltsurge Torque',
         Ear1 = 'Loquac. Earring',
@@ -35,9 +29,6 @@ local sets = {
         Feet = { Name = 'Telchine Pigaches', Augment = '"Fast Cast"+5' },
     },
     SongBuff = {
-        Main = { Name = 'Kali', AugPath='D' },
-        Sub = 'Jody Shield',
-        Range = { Name = 'Gjallarhorn', AugTrial=3591 },
         Head = 'Fili Calot',
         Neck = 'Moonbow Whistle',
         Ear1 = 'Musical Earring',
@@ -52,9 +43,6 @@ local sets = {
         Feet = 'Brioso Slippers +2',
     },
     SongAcc = {
-        Main = { Name = 'Kali', AugPath='D' },
-        Sub = 'Jody Shield',
-        Range = { Name = 'Gjallarhorn', AugTrial=3591 },
         Head = 'Inyanga Tiara',
         Neck = 'Moonbow Whistle',
         Ear1 = 'Musical Earring',
@@ -69,9 +57,6 @@ local sets = {
         Feet = 'Inyanga Crackows',
     },
     TP_MstrMelee = {
-        Main = { Name = 'Kali', AugPath='D' },
-        Sub = 'Jody Shield',
-        Range = { Name = 'Gjallarhorn', AugTrial=3591 },
         Head = 'Aya. Zucchetto +1',
         Neck = 'Moonbow Whistle',
         Ear1 = 'Musical Earring',
