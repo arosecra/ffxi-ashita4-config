@@ -11,10 +11,26 @@ local sets = {
         Hands = { Name = 'Odyssean Gauntlets', Augment = { [1] = '"Fast Cast"+4', [2] = 'Mag. Acc.+12', [3] = '"Mag. Atk. Bns."+7', [4] = 'AGI+5', [5] = 'Attack+9' } },
         Ring1 = 'Moonbeam Ring',
         Ring2 = 'Meridian Ring',
-        Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'Damage taken-5%', [2] = 'Mag. Eva.+20', [3] = 'Eva.+20', [4] = 'VIT+30', [5] = 'Enmity+10' } },
+        Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'HP+80', [2] = 'Eva.+20', [3] = '"Fast Cast"+10', [4] = 'Mag. Eva.+20' } },
         Waist = 'Steppe Sash',
         Legs = { Name = 'Souv. Diechlings +1', AugPath='C' },
         Feet = { Name = 'Odyssean Greaves', Augment = { [1] = 'Mag. Acc.+7', [2] = 'MND+10', [3] = '"Fast Cast"+4', [4] = '"Mag. Atk. Bns."+21' } },
+    },
+    Phalanx = {
+        Sub = { Name = 'Priwen', AugPath='A' },
+        Ammo = 'Staunch Tathlum',
+        Head = { Name = 'Yorium Barbuta', Augment = { [1] = 'Enmity+10', [2] = 'Phalanx +3' } },
+        Neck = 'Dualism Collar +1',
+        Ear1 = 'Tuisto Earring',
+        Ear2 = 'Odnowa Earring',
+        Body = { Name = 'Valorous Mail', Augment = { [1] = '"Mag. Atk. Bns."+9', [2] = 'Mag. Acc.+9', [3] = 'Accuracy+34', [4] = 'Phalanx +4', [5] = 'Attack+15', [6] = 'Pet: STR+9' } },
+        Hands = { Name = 'Souv. Handsch. +1', AugPath='D' },
+        Ring1 = 'Moonbeam Ring',
+        Ring2 = 'Meridian Ring',
+        Back = 'Weard Mantle',
+        Waist = 'Steppe Sash',
+        Legs = { Name = 'Yorium Cuisses', Augment = 'Phalanx +3' },
+        Feet = { Name = 'Souveran Schuhs +1', AugPath='C' },
     },
     TP_MstrMelee = {
         Sub = { Name = 'Aegis', AugTrial=4448 },
@@ -30,22 +46,6 @@ local sets = {
         Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'Damage taken-5%', [2] = 'Mag. Eva.+20', [3] = 'Eva.+20', [4] = 'VIT+30', [5] = 'Enmity+10' } },
         Waist = 'Isa Belt',
         Legs = { Name = 'Souv. Diechlings +1', AugPath='C' },
-        Feet = { Name = 'Souveran Schuhs +1', AugPath='C' },
-    },
-    Phalanx = {
-        Sub = { Name = 'Priwen', AugPath='A' },
-        Ammo = 'Staunch Tathlum',
-        Head = { Name = 'Yorium Barbuta', Augment = { [1] = 'Phalanx +3', [2] = 'Enmity+10' } },
-        Neck = 'Dualism Collar +1',
-        Ear1 = 'Tuisto Earring',
-        Ear2 = 'Odnowa Earring',
-        Body = { Name = 'Valorous Mail', Augment = { [1] = '"Mag. Atk. Bns."+9', [2] = 'Mag. Acc.+9', [3] = 'Accuracy+34', [4] = 'Phalanx +4', [5] = 'Attack+15', [6] = 'Pet: STR+9' } },
-        Hands = { Name = 'Souv. Handsch. +1', AugPath='D' },
-        Ring1 = 'Moonbeam Ring',
-        Ring2 = 'Meridian Ring',
-        Back = 'Weard Mantle',
-        Waist = 'Steppe Sash',
-        Legs = { Name = 'Yorium Cuisses', Augment = 'Phalanx +3' },
         Feet = { Name = 'Souveran Schuhs +1', AugPath='C' },
     },
 };
@@ -67,35 +67,35 @@ profile.HandleCommand = function(args)
 end
 
 profile.HandleDefault = function()
-    common_profile.HandleDefault(sets, gFunc, settings)
+    common_profile.HandleDefault(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleAbility = function()
-    common_profile.HandleAbility(sets, gFunc, settings)
+    common_profile.HandleAbility(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleItem = function()
-    common_profile.HandleItem(sets, gFunc, settings)
+    common_profile.HandleItem(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandlePrecast = function()
-    common_profile.HandlePrecast(sets, gFunc, settings)
+    common_profile.HandlePrecast(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleMidcast = function()
-    common_profile.HandleMidcast(sets, gFunc, settings)
+    common_profile.HandleMidcast(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandlePreshot = function()
-    common_profile.HandlePreshot(sets, gFunc, settings)
+    common_profile.HandlePreshot(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleMidshot = function()
-    common_profile.HandleMidshot(sets, gFunc, settings)
+    common_profile.HandleMidshot(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleWeaponskill = function()
-    common_profile.HandleWeaponskill(sets, gFunc, settings)
+    common_profile.HandleWeaponskill(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 return profile;

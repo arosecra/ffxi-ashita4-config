@@ -1,0 +1,3 @@
+/ja "Dark Arts" <me>
+/wait 1
+/ja "Addendum: Black" <me>

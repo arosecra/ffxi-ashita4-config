@@ -28,6 +28,11 @@ local sets = {
         Legs = 'Wakido Haidate +3',
         Feet = 'Flam. Gambieras +2',
     },
+    Dia	= {
+        Head = 'Wh. Rarab Cap +1',
+        Waist = 'Chaac Belt',
+		Hands = { Name = 'Valorous Mitts', Augment = { [1] = 'Pet: AGI+8', [2] = '"Treasure Hunter"+2', [3] = 'Accuracy+1', [4] = 'Mag. Acc.+1', [5] = 'Attack+1', [6] = '"Mag. Atk. Bns."+25' } },
+    },
     MidShot = {
         Head = 'Wh. Rarab Cap +1',
         Waist = 'Chaac Belt',
@@ -50,47 +55,47 @@ local common_profile = gFunc.LoadFile('common/common_logic.lua');
 profile.Sets = sets;
 
 profile.OnLoad = function()
-    common_profile.OnLoad(sets, gFunc, settings)
+    common_profile.OnLoad(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.OnUnload = function()
-    common_profile.OnUnload(sets, gFunc, settings)
+    common_profile.OnUnload(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleCommand = function(args)
-    common_profile.HandleCommand(sets, gFunc, settings)
+    common_profile.HandleCommand(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleDefault = function()
-    common_profile.HandleDefault(sets, gFunc, settings)
+    common_profile.HandleDefault(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleAbility = function()
-    common_profile.HandleAbility(sets, gFunc, settings)
+    common_profile.HandleAbility(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleItem = function()
-    common_profile.HandleItem(sets, gFunc, settings)
+    common_profile.HandleItem(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandlePrecast = function()
-    common_profile.HandlePrecast(sets, gFunc, settings)
+    common_profile.HandlePrecast(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleMidcast = function()
-    common_profile.HandleMidcast(sets, gFunc, settings)
+    common_profile.HandleMidcast(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandlePreshot = function()
-    common_profile.HandlePreshot(sets, gFunc, settings)
+    common_profile.HandlePreshot(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleMidshot = function()
-    common_profile.HandleMidshot(sets, gFunc, settings)
+    common_profile.HandleMidshot(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleWeaponskill = function()
-    common_profile.HandleWeaponskill(sets, gFunc, settings)
+    common_profile.HandleWeaponskill(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 return profile;

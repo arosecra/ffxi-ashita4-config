@@ -4,7 +4,7 @@ local sets = {
         Main = { Name = 'Solstice', AugPath='D' },
         Sub = 'Chanter\'s Shield',
         Range = { Name = 'Dunna', AugPath='A' },
-        Head = { Name = 'Merlinic Hood', Augment = { [1] = 'Mag. Acc.+21', [2] = 'CHR+15', [3] = 'Magic burst dmg.+6%', [4] = '"Mag. Atk. Bns."+34' } },
+        Head = 'Merlinic Hood',
         Neck = 'Voltsurge Torque',
         Ear1 = 'Handler\'s Earring +1',
         Ear2 = 'Loquac. Earring',
@@ -19,16 +19,12 @@ local sets = {
     },
     Geomancy_Magic = {
         Main = 'Idris',
-        Sub = 'Culminus',
         Range = { Name = 'Dunna', AugPath='A' },
         Head = 'Azimuth Hood',
-        Neck = 'Voltsurge Torque',
         Ear1 = 'Fulla Earring',
         Ear2 = 'Gna Earring',
         Body = { Name = 'Bagua Tunic +1', AugTrial=5331 },
         Hands = 'Geo. Mitaines +2',
-        Ring1 = { Name = 'Metamor. Ring +1', AugPath='A' },
-        Ring2 = 'Mujin Band',
         Back = { Name = 'Nantosuelta\'s Cape', Augment = { [1] = '"Mag. Atk. Bns."+10', [2] = 'Mag. Acc+20', [3] = 'Magic Damage +30', [4] = 'INT+20' } },
         Waist = 'Othila Sash',
         Legs = { Name = 'Bagua Pants', AugTrial=5223 },
@@ -40,8 +36,8 @@ local sets = {
     Elemental_Magic = {
         Main = { Name = 'Gada', Augment = { [1] = 'STR+2', [2] = '"Mag. Atk. Bns."+24', [3] = 'Mag. Acc.+22', [4] = '"Cure" potency +3%' } },
         Sub = 'Culminus',
-        Range = { Name = 'Dunna', AugPath='A' },
-        Head = { Name = 'Merlinic Hood', Augment = { [1] = 'Mag. Acc.+21', [2] = 'CHR+15', [3] = 'Magic burst dmg.+6%', [4] = '"Mag. Atk. Bns."+34' } },
+        Ammo = 'Ghastly Tathlum +1',
+        Head = 'Ea Hat +1',
         Neck = 'Mizu. Kubikazari',
         Ear1 = 'Barkaro. Earring',
         Ear2 = 'Friomisi Earring',
@@ -51,7 +47,7 @@ local sets = {
         Ring2 = 'Mujin Band',
         Back = { Name = 'Nantosuelta\'s Cape', Augment = { [1] = '"Mag. Atk. Bns."+10', [2] = 'Mag. Acc+20', [3] = 'Magic Damage +30', [4] = 'INT+20' } },
         Waist = 'Othila Sash',
-        Legs = { Name = 'Merlinic Shalwar', Augment = { [1] = 'Mag. Acc.+13', [2] = 'Accuracy+4', [3] = '"Mag. Atk. Bns."+10', [4] = 'Magic burst dmg.+8%', [5] = 'INT+3' } },
+        Legs = 'Ea Slops +1',
         Feet = 'Jhakri Pigaches +2',
     },
     TP_MstrMelee = {
@@ -90,35 +86,35 @@ profile.HandleCommand = function(args)
 end
 
 profile.HandleDefault = function()
-    common_profile.HandleDefault(sets, gFunc, settings)
+    common_profile.HandleDefault(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleAbility = function()
-    common_profile.HandleAbility(sets, gFunc, settings)
+    common_profile.HandleAbility(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleItem = function()
-    common_profile.HandleItem(sets, gFunc, settings)
+    common_profile.HandleItem(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandlePrecast = function()
-    common_profile.HandlePrecast(sets, gFunc, settings)
+    common_profile.HandlePrecast(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleMidcast = function()
-    common_profile.HandleMidcast(sets, gFunc, settings)
+    common_profile.HandleMidcast(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandlePreshot = function()
-    common_profile.HandlePreshot(sets, gFunc, settings)
+    common_profile.HandlePreshot(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleMidshot = function()
-    common_profile.HandleMidshot(sets, gFunc, settings)
+    common_profile.HandleMidshot(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleWeaponskill = function()
-    common_profile.HandleWeaponskill(sets, gFunc, settings)
+    common_profile.HandleWeaponskill(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 return profile;
