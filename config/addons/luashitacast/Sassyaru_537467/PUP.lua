@@ -16,6 +16,9 @@ local sets = {
         Legs = { Name = 'Taeon Tights', Augment = { [1] = 'Pet: Rng. Acc.+14', [2] = 'Pet: Damage taken -3%', [3] = 'Pet: Accuracy+14', [4] = 'Pet: Crit.hit rate +4' } },
         Feet = { Name = 'Taeon Boots', Augment = { [1] = 'Pet: Attack+13', [2] = 'Pet: Crit.hit rate +3', [3] = 'Pet: Damage taken -3%', [4] = 'Pet: Rng.Atk.+13' } },
     },
+    Moving = {
+        Ring1 = 'Shneddick Ring',
+    }
 };
 
 

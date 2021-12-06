@@ -1,10 +1,32 @@
 local profile = {};
 local sets = {
-    TP_MstrMelee = {
+    Phantom_Roll = {
+        Head = { Name = 'Lanun Tricorne +1', AugTrial=5310 },
+        Hands = 'Chasseur\'s Gants +1',
+        Ring1 = 'Barataria Ring',
+        Back = 'Camulus\'s Mantle',
+        Waist = 'Sailfi Belt',
+    },
+    MidShot = {
+        Head = 'Laksa. Tricorne +2',
+        Neck = 'Sanctity Necklace',
+        Ear1 = 'Handler\'s Earring',
+        Ear2 = 'Handler\'s Earring +1',
+        Body = 'Nisroch Jerkin',
+        Hands = 'Regal Gloves',
+        Ring1 = 'Paqichikaji Ring',
+        Ring2 = 'Arewe Ring',
+        Back = 'Gunslinger\'s Cape',
+        Waist = 'Impulse Belt',
+        Legs = 'Laksa. Trews +2',
+        Feet = 'Meg. Jam. +2',
+    },
+    PreShot = {
         Main = 'Naegling',
         Sub = 'Dullahan Shield',
         Range = 'Compensator',
-        Head = { Name = 'Lanun Tricorne +1', AugTrial=5310 },
+        Ammo = 'Bronze Bullet',
+        Head = 'Aurore Beret +1',
         Neck = 'Sanctity Necklace',
         Ear1 = 'Handler\'s Earring',
         Ear2 = 'Handler\'s Earring +1',
@@ -12,18 +34,24 @@ local sets = {
         Hands = 'Chasseur\'s Gants +1',
         Ring1 = 'Barataria Ring',
         Ring2 = 'Warp Ring',
-        Back = 'Camulus\'s Mantle',
-        Waist = 'Sailfi Belt',
-        Legs = 'Meg. Chausses',
-        Feet = 'Meg. Jambeaux',
+        Back = 'Navarch\'s Mantle',
+        Waist = 'Impulse Belt',
+        Legs = 'Laksa. Trews +2',
+        Feet = 'Meg. Jam. +2',
     },
-    Phantom_Roll = {
-        Range = 'Compensator',
-        Head = { Name = 'Lanun Tricorne +1', AugTrial=5310 },
-        Hands = 'Chasseur\'s Gants +1',
-        Ring1 = 'Barataria Ring',
-        Back = 'Camulus\'s Mantle',
+    TP_MstrMelee = {
+        Head = 'Laksa. Tricorne +2',
+        Neck = 'Sanctity Necklace',
+        Ear1 = 'Handler\'s Earring',
+        Ear2 = 'Handler\'s Earring +1',
+        Body = 'Nisroch Jerkin',
+        Hands = 'Laksa. Gants +2',
+        Ring1 = 'Defending Ring',
+        Ring2 = 'Rajas Ring',
+        Back = 'Gunslinger\'s Cape',
         Waist = 'Sailfi Belt',
+        Legs = 'Laksa. Trews +2',
+        Feet = 'Meg. Jam. +2',
     },
     Moving = {
         Ring1 = 'Shneddick Ring',
@@ -38,6 +66,7 @@ profile.Sets = sets;
 
 profile.OnLoad = function()
     common_profile.OnLoad(sets, gFunc, gData, gState, gSettings, settings)
+    gSettings.AllowAddSet = true;
 end
 
 profile.OnUnload = function()

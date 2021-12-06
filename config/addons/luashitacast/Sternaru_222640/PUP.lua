@@ -77,7 +77,7 @@ local sets = {
         Neck = 'Shepherd\'s Chain',
         Ear1 = 'Rimeice Earring',
         Ear2 = 'Handler\'s Earring +1',
-        Body = { Name = 'Pitre Tobe +2', AugTrial=5379 },
+        Body = 'Pitre Tobe +3',
         Hands = 'Foire Dastanas +2',
         Ring1 = 'Varar Ring +1',
         Ring2 = 'Overbearing Ring',

@@ -5,7 +5,5 @@ settings["decline"] = T{ };
 settings["join"] = T{ };
 settings["ignore"] = T{ };
 settings["mode"] = 2;
-settings["join"][1] = "steraru";
-settings["join"][2] = "Sternaru";
 
 return settings;
