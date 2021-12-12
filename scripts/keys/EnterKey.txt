@@ -1,0 +1,3 @@
+/sendkey Return down
+/wait .1
+/sendkey Return up
