@@ -516,6 +516,10 @@ common_logic.HandleMidcast = function(sets, gFunc, gData, gState, gSettings, set
 			actionFamily = "Helix"
 		end
 		
+		if string.match(actionName, 'Protect') then
+			actionFamily = "Protect"
+		end
+		
 		if actionSkill == 'Enhancing_Magic' then
 			local perpetuance = gData.GetBuffCount(469)
 			if perpetuance == 1 then
