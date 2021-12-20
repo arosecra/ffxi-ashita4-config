@@ -1,0 +1,31 @@
+require('common');
+
+local settings = T{ };
+settings["COR"] = T{ };
+settings["COR"]["gambits"] = T{ };
+settings["COR"]["gambits"][1] = T{ };
+settings["COR"]["gambits"][2] = T{ };
+settings["COR"]["gambits"][3] = T{ };
+settings["PUP"] = T{ };
+settings["PUP"]["gambits"] = T{ };
+settings["PUP"]["gambits"][1] = T{ };
+settings["COR"]["gambits"][1]["on"] = false;
+settings["COR"]["gambits"][1]["label"] = "Gambit 1";
+settings["COR"]["gambits"][1]["condition_count"] = 0;
+settings["COR"]["gambits"][1]["selected"] = "phantom_roll_1";
+settings["COR"]["gambits"][2]["on"] = true;
+settings["COR"]["gambits"][2]["label"] = "Gambit 2";
+settings["COR"]["gambits"][2]["condition_count"] = 0;
+settings["COR"]["gambits"][2]["selected"] = "phantom_roll_2";
+settings["COR"]["gambits"][3]["on"] = false;
+settings["COR"]["gambits"][3]["label"] = "Gambit 3";
+settings["COR"]["gambits"][3]["condition_count"] = 0;
+settings["COR"]["gambits"][3]["selected"] = "";
+settings["COR"]["count"] = 3;
+settings["PUP"]["gambits"][1]["label"] = "Gambit 1";
+settings["PUP"]["gambits"][1]["condition_count"] = 0;
+settings["PUP"]["gambits"][1]["on"] = false;
+settings["PUP"]["gambits"][1]["selected"] = "maneuver";
+settings["PUP"]["count"] = 1;
+
+return settings;

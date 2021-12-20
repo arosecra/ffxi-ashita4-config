@@ -20,8 +20,6 @@ local sets = {
         Head = { Name = 'Carmine Mask +1', AugPath='D' },
         Neck = 'Voltsurge Torque',
 		Feet = { Name = 'Odyssean Greaves', Augment = { [1] = 'Mag. Acc.+7', [2] = 'MND+10', [3] = '"Fast Cast"+4', [4] = '"Mag. Atk. Bns."+21' } },
-    
-	
 	},
     TP_MstrMelee = {
         Ear1 = { Name = 'Tuisto Earring', Priority=1},
@@ -33,10 +31,9 @@ local sets = {
 		Ring1 = { Name= 'Moonbeam Ring', Priority=1},
         Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'Damage taken-5%', [2] = 'Mag. Eva.+20', [3] = 'Eva.+20', [4] = 'VIT+30', [5] = 'Enmity+10' }, Priority=1 },
         
-		
         Sub = { Name = 'Aegis', AugTrial=4448 },
         Ammo = 'Staunch Tathlum',
-        Neck = 'Warder\'s Charm',
+        Neck = 'Warder\'s Charm +1',
         Ear2 = 'Handler\'s Earring +1',
         Ring2 = 'Defending Ring',
         Waist = 'Isa Belt',
@@ -57,7 +54,7 @@ local sets = {
         Body = { Name = 'Valorous Mail', Augment = { [1] = '"Mag. Atk. Bns."+9', [2] = 'Mag. Acc.+9', [3] = 'Accuracy+34', [4] = 'Phalanx +4', [5] = 'Attack+15', [6] = 'Pet: STR+9' } },
         Back = { Name = 'Weard Mantle', Augment = { [1] = 'Enmity+3', [2] = 'Phalanx +5', [3] = 'VIT+2', [4] = 'DEX+2' } },
         Legs = { Name = 'Yorium Cuisses', Augment = 'Phalanx +3' },
-        },
+    },
 };
 
 local settings = {

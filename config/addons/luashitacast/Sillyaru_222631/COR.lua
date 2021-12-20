@@ -7,6 +7,27 @@ local sets = {
         Back = 'Camulus\'s Mantle',
         Waist = 'Sailfi Belt',
     },
+    Moving = {
+        Ring1 = 'Shneddick Ring',
+    },
+    QuickDraw = {
+        Main = { Name = 'Rostam', AugPath='C' },
+        Sub = 'Nusku Shield',
+        Range = 'Compensator',
+        Ammo = 'Bronze Bullet',
+        Head = 'Laksa. Tricorne +2',
+        Neck = 'Sanctity Necklace',
+        Ear1 = 'Handler\'s Earring',
+        Ear2 = 'Handler\'s Earring +1',
+        Body = 'Rawhide Vest',
+        Hands = 'Laksa. Gants +2',
+        Ring1 = 'Defending Ring',
+        Ring2 = 'Rajas Ring',
+        Back = 'Gunslinger\'s Cape',
+        Waist = 'Sailfi Belt',
+        Legs = 'Laksa. Trews +2',
+        Feet = 'Meg. Jam. +2',
+    },
     MidShot = {
         Head = 'Laksa. Tricorne +2',
         Neck = 'Sanctity Necklace',
@@ -22,8 +43,6 @@ local sets = {
         Feet = 'Meg. Jam. +2',
     },
     PreShot = {
-        Main = 'Naegling',
-        Sub = 'Dullahan Shield',
         Range = 'Compensator',
         Ammo = 'Bronze Bullet',
         Head = 'Aurore Beret +1',
@@ -52,9 +71,6 @@ local sets = {
         Waist = 'Sailfi Belt',
         Legs = 'Laksa. Trews +2',
         Feet = 'Meg. Jam. +2',
-    },
-    Moving = {
-        Ring1 = 'Shneddick Ring',
     },
 };
 

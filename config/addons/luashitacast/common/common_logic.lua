@@ -512,6 +512,10 @@ common_logic.HandleMidcast = function(sets, gFunc, gData, gState, gSettings, set
 			end
 		end
 		
+		if string.match(actionName, 'Shot') then
+			actionFamily = "QuickDraw"
+		end
+		
 		if string.match(actionName, 'Helix') then
 			actionFamily = "Helix"
 		end
