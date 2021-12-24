@@ -46,7 +46,7 @@ local sets = {
         Ring1 = { Name = 'Metamor. Ring +1', AugPath='A' },
         Ring2 = 'Mujin Band',
         Back = { Name = 'Nantosuelta\'s Cape', Augment = { [1] = '"Mag. Atk. Bns."+10', [2] = 'Mag. Acc+20', [3] = 'Magic Damage +30', [4] = 'INT+20' } },
-        Waist = 'Othila Sash',
+        Waist = 'Acuity Belt +1',
         Legs = 'Ea Slops +1',
         Feet = 'Jhakri Pigaches +2',
     },

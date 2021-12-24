@@ -5,6 +5,7 @@
 /load Multisend
 /load Packer
 /load Shorthand
+/load ThirdParty
 /load Uberwarp
 
 /addon load autojoin
@@ -15,6 +16,7 @@
 /addon load enternity
 /addon load luashitacast
 
+/addon load charcycle
 /addon load extexec
 /addon load jobhelper
 /addon load sneak

@@ -6,6 +6,7 @@
 /load Multisend
 /load Packer
 /load Shorthand
+/load ThirdParty
 /load Uberwarp
 
 /addon load imguistyle2
@@ -22,6 +23,7 @@
 /addon load luashitacast
 /addon load tparty
 
+/addon load charcycle
 /addon load extexec
 /addon load jobsettings
 /addon load jobhelper
