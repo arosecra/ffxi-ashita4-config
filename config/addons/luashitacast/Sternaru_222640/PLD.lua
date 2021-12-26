@@ -41,7 +41,7 @@ local sets = {
     Phalanx = {
 		Hands = { Name = 'Souv. Handsch. +1', AugPath='D', Priority=1 },
         Feet = { Name = 'Souveran Schuhs +1', AugPath='C', Priority=1 },
-		Neck = { Name= 'Dualism Collar +1', Priority=2},
+		Neck = { Name= 'Unmoving Collar +1', Priority=2},
         Ring1 = { Name= 'Moonbeam Ring', Priority=2},
         Ring2 = { Name= 'Meridian Ring', Priority=2},
         Waist = { Name= 'Steppe Sash', Priority=2},

@@ -25,7 +25,7 @@ local sets = {
         Ear2 = 'Gna Earring',
         Body = { Name = 'Bagua Tunic +1', AugTrial=5331 },
         Hands = 'Geo. Mitaines +2',
-        Back = { Name = 'Nantosuelta\'s Cape', Augment = { [1] = '"Mag. Atk. Bns."+10', [2] = 'Mag. Acc+20', [3] = 'Magic Damage +30', [4] = 'INT+20' } },
+        Back = { Name = 'Lifestream Cape', Augment = { [1] = 'Geomancy Skill +5', [2] = 'Indi. eff. dur. +20' } },
         Waist = 'Othila Sash',
         Legs = { Name = 'Bagua Pants', AugTrial=5223 },
         Feet = 'Azimuth Gaiters',

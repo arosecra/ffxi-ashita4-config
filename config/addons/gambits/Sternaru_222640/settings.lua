@@ -1,6 +1,10 @@
 require('common');
 
 local settings = T{ };
+settings["PUP"] = T{ };
+settings["PUP"]["gambits"] = T{ };
+settings["PUP"]["gambits"][1] = T{ };
+settings["PUP"]["gambits"][1]["conditions"] = T{ };
 settings["PLD"] = T{ };
 settings["PLD"]["gambits"] = T{ };
 settings["PLD"]["gambits"][1] = T{ };
@@ -10,6 +14,11 @@ settings["PLD"]["gambits"][3] = T{ };
 settings["PLD"]["gambits"][3]["conditions"] = T{ };
 settings["PLD"]["gambits"][4] = T{ };
 settings["PLD"]["gambits"][4]["conditions"] = T{ };
+settings["PUP"]["gambits"][1]["label"] = "Gambit 1 maneuver";
+settings["PUP"]["gambits"][1]["selected"] = "maneuver";
+settings["PUP"]["gambits"][1]["condition_count"] = 0;
+settings["PUP"]["gambits"][1]["on"] = true;
+settings["PUP"]["count"] = 1;
 settings["PLD"]["gambits"][1]["on"] = false;
 settings["PLD"]["gambits"][1]["label"] = "Gambit 1 majesty";
 settings["PLD"]["gambits"][1]["condition_count"] = 0;

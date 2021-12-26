@@ -21,7 +21,7 @@ local sets = {
         Ear2 = 'Loquac. Earring',
         Body = 'Inyanga Jubbah +2',
         Hands = { Name = 'Gende. Gages +1', Augment = { [1] = 'Magic dmg. taken -3%', [2] = 'Phys. dmg. taken -4%', [3] = '"Cure" potency +7%' } },
-        Ring1 = 'Prolix Ring',
+        Ring1 = 'Kishar Ring',
         Ring2 = 'Metamorph Ring',
         Back = 'Swith Cape +1',
         Waist = 'Embla Sash',
