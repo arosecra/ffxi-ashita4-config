@@ -1,0 +1,7 @@
+/lac disable Main
+/wait 1
+/equip Main "Dullahan Axe"
+/wait 1
+/equip Main "Solstice"
+/wait 1
+/lac enable Main

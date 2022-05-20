@@ -23,10 +23,9 @@
 /addon load luashitacast
 /addon load tparty
 
-/addon load charcycle
 /addon load extexec
 /addon load jobsettings
-/addon load jobhelper
+/addon load gambits
 /addon load petparty
 /addon load macropalette
 /addon load sneak

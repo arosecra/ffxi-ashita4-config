@@ -55,7 +55,7 @@ local common_profile = gFunc.LoadFile('common/common_logic.lua');
 profile.Sets = sets;
 
 profile.OnLoad = function()
-    common_profile.OnLoad(sets, gFunc, gData, gState, gSettings, settings)
+    gSettings.AllowAddSet = true;
 end
 
 profile.OnUnload = function()

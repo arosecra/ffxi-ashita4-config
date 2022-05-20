@@ -1,9 +1,7 @@
 local profile = {};
 local sets = {
     Blue_Magic = {
-        Main = { Name = 'Tizona', AugTrial=1022 },
-        Sub = { Name = 'Vampirism', Augment = { [1] = 'STR+7', [2] = 'DMG:+12', [3] = 'INT+9' } },
-        Ammo = 'Ghastly Tathlum',
+        Ammo = 'Ghastly Tathlum +1',
         Head = 'Jhakri Coronal +2',
         Neck = 'Sanctity Necklace',
         Ear1 = 'Friomisi Earring',
@@ -18,8 +16,10 @@ local sets = {
         Feet = 'Jhakri Pigaches +2',
     },
     FastCast = {
+        Main = 'Naegling',
+        Sub = { Name = 'Vampirism', Augment = { [1] = 'STR+7', [2] = 'DMG:+12', [3] = 'INT+9' } },
         Ammo = 'Sapience Orb',
-        Head = { Name = 'Taeon Chapeau', Augment = { [1] = 'Pet: Damage taken -4%', [2] = '"Fast Cast"+5', [3] = '"Mag. Atk. Bns."+15' } },
+        Head = { Name = 'Carmine Mask +1', AugPath='D' },
         Neck = 'Orunmila\'s Torque',
         Ear1 = 'Enchntr. Earring +1',
         Ear2 = 'Loquac. Earring',
@@ -30,7 +30,103 @@ local sets = {
         Back = 'Swith Cape +1',
         Waist = { Name = 'Sailfi Belt +1', AugPath='A' },
         Legs = { Name = 'Psycloth Lappas', AugPath='D' },
-        Feet = { Name = 'Taeon Boots', Augment = { [1] = 'Pet: DEF+25', [2] = '"Fast Cast"+5', [3] = 'Pet: Damage taken -4%' } },
+        Feet = { Name = 'Carmine Greaves +1', AugPath='D' },
+    },
+    Expiacion = {
+        Ammo = 'Floestone',
+        Head = 'Jhakri Coronal +2',
+        Neck = 'Fotia Gorget',
+        Ear1 = { Name = 'Moonshade Earring', Augment = { [1] = 'TP Bonus +250', [2] = 'Attack+4' } },
+        Ear2 = 'Odr Earring',
+        Body = 'Assim. Jubbah +3',
+        Hands = 'Jhakri Cuffs +2',
+        Ring1 = 'Apate Ring',
+        Ring2 = { Name = 'Metamor. Ring +1', AugPath='A' },
+        Back = { Name = 'Rosmerta\'s Cape', Augment = { [1] = 'Accuracy+20', [2] = '"Dbl.Atk."+10', [3] = 'Attack+20', [4] = 'DEX+26' } },
+        Waist = { Name = 'Sailfi Belt +1', AugPath='A' },
+        Legs = 'Jhakri Slops +2',
+        Feet = 'Jhakri Pigaches +2',
+    },
+    Moving = {
+        Ring1 = 'Shneddick Ring',
+    },
+    Blue_Magic_Skill = {
+        Head = { Name = 'Luh. Keffiyeh +1', AugTrial=5305 },
+        Neck = 'Deceiver\'s Torque',
+        Ear1 = 'Njordr Earring',
+        Body = 'Assim. Jubbah +3',
+        Hands = 'Rawhide Gloves',
+        Back = { Name = 'Cornflower Cape', Augment = { [1] = 'Accuracy+4', [2] = 'Blue Magic skill +8', [3] = 'MP+29', [4] = 'DEX+1' } },
+        Legs = 'Hashishin Tayt +1',
+        Feet = { Name = 'Luhlaza Charuqs +1', AugTrial=5309 },
+    },
+    Blue_Magic_MAB = {
+        Main = 'Naegling',
+        Sub = { Name = 'Vampirism', Augment = { [1] = 'STR+7', [2] = 'DMG:+12', [3] = 'INT+9' } },
+        Ammo = 'Ghastly Tathlum +1',
+        Head = 'Jhakri Coronal +2',
+        Neck = 'Sanctity Necklace',
+        Ear1 = 'Friomisi Earring',
+        Ear2 = 'Hecate\'s Earring',
+        Body = { Name = 'Amalric Doublet +1', AugPath='A' },
+        Hands = { Name = 'Amalric Gages +1', AugPath='D' },
+        Ring1 = 'Jhakri Ring',
+        Ring2 = { Name = 'Metamor. Ring +1', AugPath='A' },
+        Back = { Name = 'Rosmerta\'s Cape', Augment = { [1] = '"Mag. Atk. Bns."+10', [2] = 'Mag. Acc+20', [3] = 'Magic Damage +20', [4] = 'INT+30' } },
+        Waist = 'Yamabuki-no-Obi',
+        Legs = 'Jhakri Slops +2',
+        Feet = 'Jhakri Pigaches +2',
+    },
+    Blue_Magic_MACC = {
+        Main = 'Naegling',
+        Sub = { Name = 'Vampirism', Augment = { [1] = 'STR+7', [2] = 'DMG:+12', [3] = 'INT+9' } },
+        Ammo = 'Ginsen',
+        Head = 'Jhakri Coronal +2',
+        Neck = 'Sanctity Necklace',
+        Ear1 = 'Cessance Earring',
+        Ear2 = 'Brutal Earring',
+        Body = { Name = 'Amalric Doublet +1', AugPath='A' },
+        Hands = 'Jhakri Cuffs +2',
+        Ring1 = 'Begrudging Ring',
+        Ring2 = 'Petrov Ring',
+        Back = { Name = 'Rosmerta\'s Cape', Augment = { [1] = '"Mag. Atk. Bns."+10', [2] = 'Mag. Acc+20', [3] = 'Magic Damage +20', [4] = 'INT+30' } },
+        Waist = 'Eschan Stone',
+        Legs = 'Jhakri Slops +2',
+        Feet = 'Jhakri Pigaches +2',
+    },
+    Blue_Magic_Physical = {
+        Main = 'Naegling',
+        Sub = { Name = 'Vampirism', Augment = { [1] = 'STR+7', [2] = 'DMG:+12', [3] = 'INT+9' } },
+        Ammo = 'Ginsen',
+        Head = 'Jhakri Coronal +2',
+        Neck = 'Deceiver\'s Torque',
+        Ear1 = 'Cessance Earring',
+        Ear2 = 'Brutal Earring',
+        Body = 'Jhakri Robe +2',
+        Hands = { Name = 'Herculean Gloves', Augment = { [1] = '"Mag. Atk. Bns."+5', [2] = 'Mag. Acc.+33', [3] = 'Accuracy+9', [4] = 'CHR+3', [5] = 'Attack+9', [6] = '"Refresh"+2' } },
+        Ring1 = 'Begrudging Ring',
+        Ring2 = 'Petrov Ring',
+        Back = { Name = 'Rosmerta\'s Cape', Augment = { [1] = 'Accuracy+20', [2] = '"Dbl.Atk."+10', [3] = 'Attack+20', [4] = 'DEX+26' } },
+        Waist = 'Eschan Stone',
+        Legs = { Name = 'Herculean Trousers', Augment = { [1] = 'Mag. Acc.+19', [2] = 'AGI+12', [3] = '"Mag. Atk. Bns."+33' } },
+        Feet = 'Jhakri Pigaches +2',
+    },
+    TP_MstrDT = {
+        Main = 'Naegling',
+        Sub = { Name = 'Vampirism', Augment = { [1] = 'STR+7', [2] = 'DMG:+12', [3] = 'INT+9' } },
+        Ammo = 'Staunch Tathlum',
+        Head = { Name = 'Herculean Helm', Augment = { [1] = 'Damage taken-4%', [2] = 'Attack+9', [3] = 'STR+3' } },
+        Neck = 'Loricate Torque +1',
+        Ear1 = 'Genmei Earring',
+        Ear2 = 'Ethereal Earring',
+        Body = 'Ayanmo Corazza +2',
+        Hands = { Name = 'Herculean Gloves', Augment = { [1] = 'Accuracy+24', [2] = 'CHR+7', [3] = 'Attack+9', [4] = '"Triple Atk."+4' } },
+        Ring1 = { Name = 'Dark Ring', Augment = { [1] = 'Magic dmg. taken -3%', [2] = 'Breath dmg. taken -3%', [3] = 'Phys. dmg. taken -4%' } },
+        Ring2 = 'Defending Ring',
+        Back = 'Solemnity Cape',
+        Waist = 'Flume Belt',
+        Legs = 'Aya. Cosciales +2',
+        Feet = { Name = 'Herculean Boots', Augment = { [1] = 'Damage taken-3%', [2] = 'Attack+27', [3] = 'Accuracy+14' } },
     },
     TP_MstrMelee = {
         Ammo = 'Ginsen',
@@ -47,24 +143,6 @@ local sets = {
         Legs = { Name = 'Samnuha Tights', Augment = { [1] = 'STR+8', [2] = '"Dbl.Atk."+3', [3] = '"Triple Atk."+2', [4] = 'DEX+9' } },
         Feet = { Name = 'Herculean Boots', Augment = { [1] = 'Accuracy+24', [2] = 'Attack+9', [3] = '"Triple Atk."+4' } },
     },
-    Expiacion = {
-        Ammo = 'Floestone',
-        Head = 'Jhakri Coronal +2',
-        Neck = 'Fotia Gorget',
-        Ear1 = { Name = 'Moonshade Earring', Augment = { [1] = 'TP Bonus +250', [2] = 'Attack+4' } },
-        Ear2 = 'Odr Earring',
-        Body = 'Assim. Jubbah +2',
-        Hands = 'Jhakri Cuffs +2',
-        Ring1 = 'Apate Ring',
-        Ring2 = { Name = 'Metamor. Ring +1', AugPath='A' },
-        Back = { Name = 'Rosmerta\'s Cape', Augment = { [1] = 'Accuracy+20', [2] = '"Dbl.Atk."+10', [3] = 'Attack+20', [4] = 'DEX+26' } },
-        Waist = { Name = 'Sailfi Belt +1', AugPath='A' },
-        Legs = 'Jhakri Slops +2',
-        Feet = 'Jhakri Pigaches +2',
-    },
-    Moving = {
-        Ring1 = 'Shneddick Ring',
-    },
 };
 
 local settings = {
@@ -74,7 +152,6 @@ local common_profile = gFunc.LoadFile('common/common_logic.lua');
 profile.Sets = sets;
 
 profile.OnLoad = function()
-    common_profile.OnLoad(sets, gFunc, gData, gState, gSettings, settings)
     gSettings.AllowAddSet = true;
 end
 
@@ -83,7 +160,7 @@ profile.OnUnload = function()
 end
 
 profile.HandleCommand = function(args)
-    common_profile.HandleCommand(sets, gFunc, gData, gState, gSettings, settings)
+	common_profile.HandleCommand(args, gFunc, settings)
 end
 
 profile.HandleDefault = function()

@@ -429,6 +429,14 @@ common_logic.HandleDefault = function(sets, gFunc, gData, gState, gSettings, set
 			gFunc.EquipSet(sets.Moving)
 		else
 			gFunc.EquipSet('TP_' .. settings.Strategy);
+			
+			if settings.IdleMain ~= nil and sets[settings.IdleMain] ~= nil then
+				gFunc.EquipSet(sets[settings.IdleMain])
+			end
+			
+			if settings.IdleSub ~= nil and sets[settings.IdleSub] ~= nil then
+				gFunc.EquipSet(sets[settings.IdleSub])
+			end
 		end
 	end
 	
@@ -512,16 +520,20 @@ common_logic.HandleMidcast = function(sets, gFunc, gData, gState, gSettings, set
 			end
 		end
 		
-		if string.match(actionName, 'Shot') then
-			actionFamily = "QuickDraw"
-		end
-		
-		if string.match(actionName, 'Helix') then
+		if string.match(actionName, 'Curaga') then
+			actionFamily = "Cure"
+		elseif string.match(actionName, 'Cure') then
+			actionFamily = "Cure"
+		elseif string.match(actionName, 'Dia') then
+			actionFamily = "Dia"
+		elseif string.match(actionName, 'Helix') then
 			actionFamily = "Helix"
-		end
-		
-		if string.match(actionName, 'Protect') then
+		elseif string.match(actionName, 'Protect') then
 			actionFamily = "Protect"
+		elseif string.match(actionName, 'Regen') then
+			actionFamily = "Regen"
+		elseif string.match(actionName, 'Shot') then
+			actionFamily = "QuickDraw"
 		end
 		
 		if actionSkill == 'Enhancing_Magic' then

@@ -1,0 +1,7 @@
+/lac disable Main
+/wait 1
+/equip Main "Chastisers"
+/wait 1
+/equip Main "Ohtas"
+/wait 1
+/lac enable Main
