@@ -31,7 +31,7 @@ profile.Sets = {
     },
     Phalanx = {
         Ammo = 'Staunch Tathlum',
-        Head = { Name = 'Fu. Bandeau +1', AugTrial=5335 },
+        Head = 'Rune. Bandeau +2',
         Neck = { Name = 'Unmoving Collar +1', AugPath='A' },
         Ear1 = { Name = 'Tuisto Earring', Priority=2 },
         Ear2 = 'Mimir Earring',
