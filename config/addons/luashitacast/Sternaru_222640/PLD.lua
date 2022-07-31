@@ -18,23 +18,6 @@ local sets = {
     Priwen = {
         Sub = { Name = 'Priwen', AugPath='A' },
     },
-    TP_HP = {
-        Main = 'Nixxer',
-        Sub = { Name = 'Priwen', AugPath='A' },
-        Ammo = 'Staunch Tathlum',
-        Head = { Name = 'Souv. Schaller +1', AugPath='D' },
-        Neck = { Name = 'Unmoving Collar +1', AugPath='A' },
-        Ear1 = 'Tuisto Earring',
-        Ear2 = 'Odnowa Earring',
-        Body = 'Rev. Surcoat +2',
-        Hands = { Name = 'Souv. Handsch. +1', AugPath='D' },
-        Ring1 = 'Moonbeam Ring',
-        Ring2 = 'Meridian Ring',
-        Back = { Name = 'Rudianos\'s Mantle', Augment = { [1] = 'HP+80', [2] = 'Eva.+20', [3] = '"Fast Cast"+10', [4] = 'Mag. Eva.+20' } },
-        Waist = 'Steppe Sash',
-        Legs = { Name = 'Souv. Diechlings +1', AugPath='C' },
-        Feet = { Name = 'Souveran Schuhs +1', AugPath='C' },
-    },
     Phalanx = {
         Main = 'Nixxer',
         Sub = { Name = 'Priwen', AugPath='A' },
@@ -49,7 +32,7 @@ local sets = {
         Ring2 = { Name = 'Meridian Ring', Priority=2 },
         Back = { Name = 'Weard Mantle', Augment = { [1] = 'Enmity+3', [2] = 'Phalanx +5', [3] = 'VIT+2', [4] = 'DEX+2' } },
         Waist = { Name = 'Steppe Sash', Priority=2 },
-        Legs = { Name = 'Yorium Cuisses', Augment = { [1] = 'Spell interruption rate down -10%', [2] = 'Phalanx +3' } },
+        Legs = { Name = 'Valorous Hose', Augment = { [1] = '"Mag. Atk. Bns."+14', [2] = 'Attack+16', [3] = 'Mag. Acc.+14', [4] = 'Accuracy+16', [5] = 'Phalanx +5', [6] = 'VIT+11', [7] = '"Counter"+1' } },
         Feet = { Name = 'Souveran Schuhs +1', AugPath='C', Priority=2},
     },
     Aegis = {
@@ -107,7 +90,7 @@ local sets = {
         Ring2 = 'Defending Ring',
         Back = { Name = 'Moonbeam Cape', Priority=2 },
         Waist = 'Audumbla Sash',
-        Legs = { Name = 'Yorium Cuisses', Augment = { [1] = 'Spell interruption rate down -10%', [2] = 'Phalanx +3' } },
+        Legs = { Name = 'Carmine Cuisses +1', AugPath='A', Priority=2 },
         Feet = { Name = 'Odyssean Greaves', Augment = { [1] = 'Mag. Acc.+7', [2] = 'MND+10', [3] = '"Fast Cast"+4', [4] = '"Mag. Atk. Bns."+21' } },
     },
 };

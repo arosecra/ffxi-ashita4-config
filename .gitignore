@@ -18,3 +18,5 @@ config/boot/example-privateserver.ini
 config/boot/example-retail.ini
 config/plugins/FindAll/
 config/plugins/FindAll/cache/
+exports/
+README.md

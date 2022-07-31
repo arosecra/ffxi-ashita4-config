@@ -1,0 +1,3 @@
+/addon load charcycle
+/wait 1
+/charcycle
