@@ -16,6 +16,7 @@
 /addon load enternity
 /addon load luashitacast
 
+/addon load extract-character
 /addon load extexec
 /addon load gambits
 /addon load sneak

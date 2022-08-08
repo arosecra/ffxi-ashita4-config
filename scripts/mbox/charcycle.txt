@@ -1,3 +1,7 @@
 /addon load charcycle
 /wait 1
+/addon load export-character
+/wait 1
+/addon reload export-character
+/wait 1
 /charcycle

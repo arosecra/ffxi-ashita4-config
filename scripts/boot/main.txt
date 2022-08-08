@@ -23,6 +23,7 @@
 /addon load luashitacast
 /addon load tparty
 
+/addon load extract-character
 /addon load extexec
 /addon load jobsettings
 /addon load gambits
