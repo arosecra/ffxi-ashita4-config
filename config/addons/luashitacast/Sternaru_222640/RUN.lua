@@ -1,18 +1,18 @@
 local profile = {};
 profile.Sets = {
     FastCast = {
-        Head = { Name = 'Rune. Bandeau +2', Priority=2 },
-        Neck = { Name = 'Unmoving Collar +1', AugPath='A', Priority=2 },
+        Head = 'Rune. Bandeau +2',
+        Neck = { Name = 'Unmoving Collar +1', AugPath='A' },
         Ear1 = 'Loquac. Earring',
         Ear2 = 'Tuisto Earring',
-        Body = { Name = 'Runeist Coat', Priority=2 },
-        Hands = { Name = 'Runeist Mitons', Priority=2 },
-        Ring1 = { Name = 'Moonbeam Ring', Priority=2 },
-        Ring2 = { Name = 'Shneddick Ring', Priority=2 },
-        Back = { Name = 'Moonbeam Cape', Priority=2 },
-        Waist = { Name = 'Steppe Sash', Priority=2 },
+        Body = 'Erilaz Surcoat +2',
+        Hands = 'Erilaz Gauntlets +2',
+        Ring1 = 'Moonbeam Ring',
+        Ring2 = 'Kishar Ring',
+        Back = 'Moonbeam Cape',
+        Waist = 'Steppe Sash',
         Legs = 'Aya. Cosciales +2',
-        Feet = { Name = 'Carmine Greaves +1', AugPath='D', Priority=2 },
+        Feet = { Name = 'Carmine Greaves +1', AugPath='D' },
     },
     Phalanx = {
         Main = 'Epeolatry',
@@ -27,7 +27,7 @@ profile.Sets = {
         Ring2 = 'Meridian Ring',
         Back = 'Moonbeam Cape',
         Waist = 'Steppe Sash',
-        Legs = { Name = 'Herculean Trousers', Augment = { [1] = '"Dbl.Atk."+1', [2] = '"Occult Acumen"+9', [3] = 'Phalanx +3' } },
+        Legs = { Name = 'Herculean Trousers', Augment = { [1] = 'Mag. Acc.+18', [2] = '"Mag. Atk. Bns."+28', [3] = 'Accuracy+10', [4] = 'Phalanx +5', [5] = 'Attack+10', [6] = 'Rng.Atk.+27' } },
         Feet = { Name = 'Herculean Boots', Augment = { [1] = 'INT+2', [2] = 'Accuracy+12', [3] = 'Phalanx +5', [4] = 'Attack+12', [5] = 'DEX+10' } },
     },
     Moving = {
@@ -40,13 +40,13 @@ profile.Sets = {
         Ear1 = { Name = 'Odnowa Earring', Priority=2 },
         Ear2 = { Name = 'Tuisto Earring', Priority=2 },
         Body = { Name = 'Futhark Coat +3', AugTrial=5493, Priority=2 },
-        Hands = 'Aya. Manopolas +2',
+        Hands = 'Erilaz Gauntlets +2',
         Ring1 = { Name = 'Moonbeam Ring', Priority=2 },
         Ring2 = 'Defending Ring',
         Back = { Name = 'Moonbeam Cape', Priority=2 },
         Waist = { Name = 'Steppe Sash', Priority=2 },
-        Legs = 'Aya. Cosciales +2',
-        Feet = { Name = 'Carmine Greaves +1', AugPath='D', Priority=2 },
+        Legs = 'Eri. Leg Guards +2',
+        Feet = 'Erilaz Greaves +2',
     },
     Dimidiation = {
         Ammo = 'Floestone',
@@ -77,7 +77,7 @@ profile.Sets = {
         Waist = { Name = 'Steppe Sash', Priority=2 },
         Legs = { Name = 'Futhark Trousers', AugTrial=5228 },
         Feet = { Name = 'Carmine Greaves +1', AugPath='D', Priority=2 },
-    },
+    }
 };
 
 local settings = {

@@ -2,7 +2,7 @@ local profile = {};
 local sets = {
     Phantom_Roll = {
         Head = { Name = 'Lanun Tricorne +1', AugTrial=5310 },
-        Hands = 'Chasseur\'s Gants +1',
+        Hands = 'Chasseur\'s Gants +2',
         Ring1 = 'Barataria Ring',
         Back = 'Camulus\'s Mantle',
         Waist = 'Sailfi Belt',
@@ -26,7 +26,7 @@ local sets = {
         Back = 'Gunslinger\'s Cape',
         Waist = 'Sailfi Belt',
         Legs = 'Laksa. Trews +2',
-        Feet = 'Meg. Jam. +2',
+        Feet = 'Chass. Bottes +2',
     },
     MidShot = {
         Head = 'Laksa. Tricorne +2',
@@ -50,7 +50,7 @@ local sets = {
         Ear1 = 'Handler\'s Earring',
         Ear2 = 'Handler\'s Earring +1',
         Body = 'Rawhide Vest',
-        Hands = 'Chasseur\'s Gants +1',
+        Hands = 'Chasseur\'s Gants +2',
         Ring1 = 'Barataria Ring',
         Ring2 = 'Warp Ring',
         Back = 'Navarch\'s Mantle',
@@ -59,18 +59,18 @@ local sets = {
         Feet = 'Meg. Jam. +2',
     },
     TP_MstrMelee = {
-        Head = 'Laksa. Tricorne +2',
+        Head = 'Chass. Tricorne +2',
         Neck = 'Sanctity Necklace',
         Ear1 = 'Handler\'s Earring',
         Ear2 = 'Handler\'s Earring +1',
-        Body = 'Laksa. Frac +2',
-        Hands = 'Laksa. Gants +2',
-        Ring1 = 'Defending Ring',
-        Ring2 = 'Rajas Ring',
+        Body = 'Chasseur\'s Frac +2',
+        Hands = 'Chasseur\'s Gants +2',
+        Ring1 = 'Rajas Ring',
+        Ring2 = 'Defending Ring',
         Back = 'Gunslinger\'s Cape',
         Waist = 'Sailfi Belt',
         Legs = 'Laksa. Trews +2',
-        Feet = 'Meg. Jam. +2',
+        Feet = 'Chass. Bottes +2',
     },
 };
 

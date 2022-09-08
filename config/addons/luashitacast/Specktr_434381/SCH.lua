@@ -1,5 +1,5 @@
 local profile = {};
-profile.Sets = {
+local sets = {
     FastCast = {
         Main = { Name = 'Akademos', AugPath='C' },
         Sub = 'Clerisy Strap',
@@ -104,15 +104,18 @@ local settings = {
 	Strategy='MstrMelee'
 }
 local common_profile = gFunc.LoadFile('common/common_logic.lua');
+profile.Sets = sets;
 
 profile.OnLoad = function()
     gSettings.AllowAddSet = true;
 end
 
 profile.OnUnload = function()
+    common_profile.OnUnload(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleCommand = function(args)
+    common_profile.HandleCommand(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleDefault = function()

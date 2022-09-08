@@ -30,6 +30,12 @@ local sets = {
     AbysseaProcStaff = {
         Main = 'Lamia Staff',
     },
+    FastCast = {
+        Head = { Name = 'Taeon Chapeau', Augment = '"Fast Cast"+5' },
+        Hands = { Name = 'Taeon Gloves', Augment = '"Fast Cast"+5' },
+        Legs = { Name = 'Taeon Tights', Augment = '"Fast Cast"+5' },
+        Feet = { Name = 'Taeon Boots', Augment = '"Fast Cast"+5' },
+    },
     TP_TH = {
         Ammo = 'Ginsen',
         Head = 'Wh. Rarab Cap +1',

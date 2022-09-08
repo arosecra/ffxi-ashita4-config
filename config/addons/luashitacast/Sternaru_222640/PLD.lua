@@ -5,7 +5,7 @@ local sets = {
         Head = { Name = 'Souv. Schaller +1', AugPath='D', Priority=2},
         Neck = 'Warder\'s Charm +1',
         Ear1 = { Name = 'Tuisto Earring', Priority=2},
-        Ear2 = 'Handler\'s Earring +1',
+        Ear2 = { Name = 'Chev. Earring', Augment = { [1] = 'Accuracy+6', [2] = 'Mag. Acc.+6' } },
         Body = { Name = 'Souv. Cuirass +1', AugPath='D', Priority=2},
         Hands = { Name = 'Souv. Handsch. +1', AugPath='D', Priority=2},
         Ring1 = { Name = 'Moonbeam Ring', Priority=2},

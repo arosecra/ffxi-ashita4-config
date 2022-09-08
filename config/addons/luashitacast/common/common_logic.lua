@@ -457,6 +457,8 @@ common_logic.HandleAbility = function(sets, gFunc, gData, gState, gSettings, set
 		actionFamily = "Phantom_Roll"
 	elseif string.match(actionName, '_Maneuver') then
 		actionFamily = "Maneuver"
+	elseif string.match(actionName, 'Shot') then
+		actionFamily = "QuickDraw"
 	end
 	--print(actionSkill)
 	--print(actionType)
@@ -534,6 +536,7 @@ common_logic.HandleMidcast = function(sets, gFunc, gData, gState, gSettings, set
 			actionFamily = "Regen"
 		elseif string.match(actionName, 'Shot') then
 			actionFamily = "QuickDraw"
+			print(actionFamily)
 		end
 		
 		if actionSkill == 'Enhancing_Magic' then

@@ -21,6 +21,7 @@
 /addon load enternity
 /addon load equipmon
 /addon load luashitacast
+/addon load porter
 /addon load tparty
 
 /addon load extract-character
