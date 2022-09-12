@@ -11,7 +11,7 @@ local sets = {
         Ear2 = 'Handler\'s Earring +1',
         Ring1 = 'Varar Ring +1',
         Ring2 = 'Overbearing Ring',
-        Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+20', [2] = 'Pet: R.Atk.+20', [3] = 'Pet: "Regen"+10', [4] = 'Pet: Acc.+20', [5] = 'Pet: Atk.+20' } },
+        Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+20', [2] = 'Pet: R.Atk.+20', [3] = 'Pet: Haste+10', [4] = 'Pet: Acc.+20', [5] = 'Pet: Atk.+20' } },
         Waist = 'Isa Belt',
     },
     TP_119PetOnly = {
@@ -25,7 +25,7 @@ local sets = {
         Ear2 = 'Handler\'s Earring +1',
         Ring1 = 'Varar Ring +1',
         Ring2 = 'Overbearing Ring',
-        Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+20', [2] = 'Pet: R.Atk.+20', [3] = 'Pet: "Regen"+10', [4] = 'Pet: Acc.+20', [5] = 'Pet: Atk.+20' } },
+        Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+20', [2] = 'Pet: R.Atk.+20', [3] = 'Pet: Haste+10', [4] = 'Pet: Acc.+20', [5] = 'Pet: Atk.+20' } },
         Waist = 'Isa Belt',
     },
     Moving = {
@@ -43,7 +43,7 @@ local sets = {
         Ear2 = 'Handler\'s Earring +1',
         Ring1 = 'Varar Ring +1',
         Ring2 = 'Overbearing Ring',
-        Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+20', [2] = 'Pet: R.Atk.+20', [3] = 'Pet: "Regen"+10', [4] = 'Pet: Acc.+20', [5] = 'Pet: Atk.+20' } },
+        Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+20', [2] = 'Pet: R.Atk.+20', [3] = 'Pet: Haste+10', [4] = 'Pet: Acc.+20', [5] = 'Pet: Atk.+20' } },
         Waist = 'Klouskap Sash',
     },
     TP_PetOnly = {
@@ -57,7 +57,7 @@ local sets = {
         Ear2 = 'Handler\'s Earring +1',
         Ring1 = 'Varar Ring +1',
         Ring2 = 'Overbearing Ring',
-        Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+20', [2] = 'Pet: R.Atk.+20', [3] = 'Pet: "Regen"+10', [4] = 'Pet: Acc.+20', [5] = 'Pet: Atk.+20' } },
+        Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+20', [2] = 'Pet: R.Atk.+20', [3] = 'Pet: Haste+10', [4] = 'Pet: Acc.+20', [5] = 'Pet: Atk.+20' } },
         Waist = 'Isa Belt',
     },
     TP_Overdrive = {
@@ -71,7 +71,7 @@ local sets = {
         Ear2 = 'Handler\'s Earring +1',
         Ring1 = 'Varar Ring +1',
         Ring2 = 'Overbearing Ring',
-        Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+20', [2] = 'Pet: R.Atk.+20', [3] = 'Pet: "Regen"+10', [4] = 'Pet: Acc.+20', [5] = 'Pet: Atk.+20' } },
+        Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+20', [2] = 'Pet: R.Atk.+20', [3] = 'Pet: Haste+10', [4] = 'Pet: Acc.+20', [5] = 'Pet: Atk.+20' } },
         Waist = 'Isa Belt',
     },
     TP_MstrMelee = {
@@ -86,14 +86,8 @@ local sets = {
         Ear2 = 'Handler\'s Earring +1',
         Ring1 = 'Varar Ring +1',
         Ring2 = 'Overbearing Ring',
-        Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+20', [2] = 'Pet: R.Atk.+20', [3] = 'Pet: "Regen"+10', [4] = 'Pet: Acc.+20', [5] = 'Pet: Atk.+20' } },
+        Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+20', [2] = 'Pet: R.Atk.+20', [3] = 'Pet: Haste+10', [4] = 'Pet: Acc.+20', [5] = 'Pet: Atk.+20' } },
         Waist = 'Isa Belt',
-    },
-    temp = {
-        Body = { Name = 'Taeon Tabard', Augment = { [1] = 'Pet: Attack+22', [2] = 'Pet: Damage taken -4%', [3] = 'Pet: "Dbl. Atk."+3', [4] = 'Pet: Rng.Atk.+22' } },
-        Hands = { Name = 'Taeon Gloves', Augment = { [1] = 'Pet: Attack+24', [2] = 'Pet: Damage taken -4%', [3] = 'Pet: "Dbl. Atk."+4', [4] = 'Pet: Rng.Atk.+24' } },
-        Legs = { Name = 'Taeon Tights', Augment = { [1] = 'Pet: Rng. Acc.+20', [2] = 'Pet: Damage taken -3%', [3] = 'Pet: Accuracy+20', [4] = 'Pet: "Dbl. Atk."+5' } },
-        Feet = { Name = 'Taeon Boots', Augment = { [1] = 'Pet: Rng. Acc.+22', [2] = 'Pet: Damage taken -4%', [3] = 'Pet: Accuracy+22', [4] = 'Pet: "Dbl. Atk."+5' } },
     },
 };
 

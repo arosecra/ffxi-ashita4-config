@@ -12,6 +12,7 @@
 /addon load blusets
 /addon load cleancs
 /addon load config
+/addon load debuff
 /addon load distance
 /addon load enternity
 /addon load luashitacast
@@ -21,4 +22,5 @@
 /addon load extexec
 /addon load gambits
 /addon load sneak
+/addon load petparty
 /addon load warptome

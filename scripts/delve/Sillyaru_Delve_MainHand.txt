@@ -1,6 +1,6 @@
 /lac disable Main
 /wait 1
-/equip Main "Vanir Knife"
+/equip Main 
 /wait 1
 /equip Main "Rostam"
 /wait 1

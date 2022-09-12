@@ -69,7 +69,7 @@ local sets = {
         Ring2 = 'Defending Ring',
         Back = 'Gunslinger\'s Cape',
         Waist = 'Sailfi Belt',
-        Legs = 'Laksa. Trews +2',
+        Legs = 'Chas. Culottes +2',
         Feet = 'Chass. Bottes +2',
     },
 };

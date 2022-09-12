@@ -46,7 +46,7 @@ local sets = {
         Ring2 = { Name = 'Metamor. Ring +1', AugPath='A' },
         Back = { Name = 'Rosmerta\'s Cape', Augment = { [1] = 'Accuracy+20', [2] = '"Dbl.Atk."+10', [3] = 'Attack+20', [4] = 'DEX+26' } },
         Waist = { Name = 'Sailfi Belt +1', AugPath='A' },
-        Legs = 'Jhakri Slops +2',
+        Legs = 'Hashishin Tayt +2',
         Feet = 'Jhakri Pigaches +2',
     },
     Moving = {
@@ -147,6 +147,23 @@ local sets = {
     },
     temp = {
         Main = 'Naegling',
+    },
+    Blue_Magic2 = {
+        Main = 'Naegling',
+        Sub = { Name = 'Nibiru Cudgel', AugPath='B' },
+        Ammo = { Name = 'Ghastly Tathlum +1', AugPath='A' },
+        Head = 'Hashishin Kavuk +2',
+        Neck = 'Sanctity Necklace',
+        Ear1 = 'Friomisi Earring',
+        Ear2 = 'Hecate\'s Earring',
+        Body = 'Hashishin Mintan +2',
+        Hands = 'Hashi. Bazu. +2',
+        Ring1 = 'Acumen Ring',
+        Ring2 = { Name = 'Metamor. Ring +1', AugPath='A' },
+        Back = { Name = 'Rosmerta\'s Cape', Augment = { [1] = '"Mag. Atk. Bns."+10', [2] = 'Mag. Acc+20', [3] = 'Magic Damage +20', [4] = 'INT+30' } },
+        Waist = 'Yamabuki-no-Obi',
+        Legs = 'Hashishin Tayt +2',
+        Feet = 'Hashi. Basmak +2',
     },
 };
 

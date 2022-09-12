@@ -2,4 +2,6 @@
 /wait 1
 /equip Main "Nibiru Cudgel"
 /wait 1
+/equip Main "Bolelabunga"
+/wait 1
 /lac enable Main

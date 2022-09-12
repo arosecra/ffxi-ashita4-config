@@ -35,11 +35,11 @@ profile.Sets = {
     },
     TP_MstrMelee = {
         Ammo = 'Staunch Tathlum',
-        Head = { Name = 'Fu. Bandeau +3', AugTrial=5471, Priority=2 },
-        Neck = { Name = 'Unmoving Collar +1', AugPath='A', Priority=2 },
+        Head = { Name = 'Erilaz Galea +2', Priority=2 },
+        Neck = 'Warder\'s Charm +1',
         Ear1 = { Name = 'Odnowa Earring', Priority=2 },
         Ear2 = { Name = 'Tuisto Earring', Priority=2 },
-        Body = { Name = 'Futhark Coat +3', AugTrial=5493, Priority=2 },
+        Body = 'Erilaz Surcoat +2',
         Hands = 'Erilaz Gauntlets +2',
         Ring1 = { Name = 'Moonbeam Ring', Priority=2 },
         Ring2 = 'Defending Ring',
@@ -51,7 +51,6 @@ profile.Sets = {
     Dimidiation = {
         Ammo = 'Floestone',
         Head = { Name = 'Rune. Bandeau +2', Priority=2 },
-        Neck = { Name = 'Unmoving Collar +1', AugPath='A' },
         Ear1 = { Name = 'Odnowa Earring', Priority=2 },
         Ear2 = { Name = 'Tuisto Earring', Priority=2 },
         Body = 'Sayadio\'s Kaftan',

@@ -9,14 +9,12 @@
 /load ThirdParty
 /load Uberwarp
 
-/addon load imguistyle2
-/wait 5
-/imguistyle load
 
 /addon load autojoin
 /addon load blusets
 /addon load cleancs
 /addon load config
+/addon load debuff
 /addon load distance
 /addon load enternity
 /addon load equipmon
@@ -24,6 +22,7 @@
 /addon load porter
 /addon load tparty
 
+/addon load imguistyle2
 /addon load extract-character
 /addon load extexec
 /addon load jobsettings
@@ -32,3 +31,7 @@
 /addon load macropalette
 /addon load sneak
 /addon load warptome
+
+/wait 5
+/imguistyle load
+/petparty show

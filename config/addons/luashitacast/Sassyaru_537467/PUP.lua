@@ -1,7 +1,6 @@
 local profile = {};
 local sets = {
     TP_MstrMelee = {
-        Main = { Name = 'Condemners', Augment = { [1] = 'Pet: Rng. Acc.+3', [2] = 'Pet: INT+6', [3] = 'Pet: Damage taken -3%', [4] = 'Pet: Accuracy+3' } },
         Head = { Name = 'Anwig Salade', Augment = { [1] = 'Accuracy+3', [2] = 'Pet: Damage taken -10%', [3] = 'Attack+3', [4] = 'Pet: Haste+5' } },
         Body = { Name = 'Taeon Tabard', Augment = { [1] = 'Pet: Attack+18', [2] = 'Pet: Damage taken -4%', [3] = 'Pet: "Regen"+3', [4] = 'Pet: Rng.Atk.+18' } },
         Hands = { Name = 'Taeon Gloves', Augment = { [1] = 'Pet: Rng. Acc.+15', [2] = 'Pet: Damage taken -4%', [3] = 'Pet: Accuracy+15', [4] = 'Pet: "Dbl. Atk."+2' } },
@@ -10,32 +9,31 @@ local sets = {
         Range = 'Animator P +1',
         Neck = 'Buffoon\'s Collar',
         Ear1 = 'Handler\'s Earring +1',
-        Ear2 = { Name = 'Karagoz Earring', Augment = { [1] = 'Accuracy+6', [2] = 'Mag. Acc.+6' } },
+        Ear2 = { Name = 'Kara. Earring +1', Augment = { [1] = 'Accuracy+12', [2] = '"Store TP"+4', [3] = 'Mag. Acc.+12' } },
         Ring1 = 'Varar Ring +1',
         Ring2 = 'Varar Ring +1',
-        Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+19', [2] = 'Pet: R.Atk.+19', [3] = 'Pet: "Regen"+10', [4] = 'Pet: Acc.+19', [5] = 'Pet: Atk.+19' } },
+        Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+19', [2] = 'Pet: R.Atk.+19', [3] = 'Pet: Haste+10', [4] = 'Pet: Acc.+19', [5] = 'Pet: Atk.+19' } },
+        Waist = 'Klouskap Sash',
+    },
+    TP_PetMelee = {
+        Head = { Name = 'Anwig Salade', Augment = { [1] = 'Accuracy+3', [2] = 'Pet: Damage taken -10%', [3] = 'Attack+3', [4] = 'Pet: Haste+5' } },
+        Body = 'Pitre Tobe +3',
+        Hands = { Name = 'Taeon Gloves', Augment = { [1] = 'Pet: Rng. Acc.+15', [2] = 'Pet: Damage taken -4%', [3] = 'Pet: Accuracy+15', [4] = 'Pet: "Dbl. Atk."+2' } },
+        Legs = { Name = 'Taeon Tights', Augment = { [1] = 'Pet: Rng. Acc.+14', [2] = 'Pet: Damage taken -4%', [3] = 'Pet: Accuracy+14', [4] = 'Pet: "Regen"+3' } },
+        Feet = { Name = 'Taeon Boots', Augment = { [1] = 'Pet: Attack+17', [2] = 'Pet: Damage taken -4%', [3] = 'Pet: "Regen"+3', [4] = 'Pet: Rng.Atk.+17' } },
+        Range = 'Animator P +1',
+        Neck = 'Buffoon\'s Collar',
+        Ear1 = 'Handler\'s Earring +1',
+        Ear2 = { Name = 'Kara. Earring +1', Augment = { [1] = 'Accuracy+12', [2] = '"Store TP"+4', [3] = 'Mag. Acc.+12' } },
+        Ring1 = 'Varar Ring +1',
+        Ring2 = 'Varar Ring +1',
+        Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+19', [2] = 'Pet: R.Atk.+19', [3] = 'Pet: Haste+10', [4] = 'Pet: Acc.+19', [5] = 'Pet: Atk.+19' } },
         Waist = 'Klouskap Sash',
     },
     Moving = {
         Ring1 = 'Shneddick Ring',
     },
-    temp = {
-        Main = { Name = 'Condemners', Augment = { [1] = 'Pet: Rng. Acc.+3', [2] = 'Pet: INT+6', [3] = 'Pet: Damage taken -3%', [4] = 'Pet: Accuracy+3' } },
-        Range = 'Animator P +1',
-        Head = { Name = 'Anwig Salade', Augment = { [1] = 'Accuracy+3', [2] = 'Pet: Damage taken -10%', [3] = 'Attack+3', [4] = 'Pet: Haste+5' } },
-        Neck = 'Buffoon\'s Collar',
-        Ear1 = 'Handler\'s Earring +1',
-        Ear2 = { Name = 'Karagoz Earring', Augment = { [1] = 'Accuracy+6', [2] = 'Mag. Acc.+6' } },
-        Body = { Name = 'Taeon Tabard', Augment = { [1] = 'Pet: Attack+18', [2] = 'Pet: Damage taken -4%', [3] = 'Pet: "Regen"+3', [4] = 'Pet: Rng.Atk.+18' } },
-        Hands = { Name = 'Taeon Gloves', Augment = { [1] = 'Pet: Rng. Acc.+15', [2] = 'Pet: Damage taken -4%', [3] = 'Pet: Accuracy+15', [4] = 'Pet: "Dbl. Atk."+2' } },
-        Ring1 = 'Shneddick Ring',
-        Ring2 = 'Varar Ring +1',
-        Waist = 'Klouskap Sash',
-        Legs = { Name = 'Taeon Tights', Augment = { [1] = 'Pet: Rng. Acc.+14', [2] = 'Pet: Damage taken -4%', [3] = 'Pet: Accuracy+14', [4] = 'Pet: "Regen"+3' } },
-        Feet = { Name = 'Taeon Boots', Augment = { [1] = 'Pet: Attack+17', [2] = 'Pet: Damage taken -4%', [3] = 'Pet: "Regen"+3', [4] = 'Pet: Rng.Atk.+17' } },
-    },
 };
-
 
 local settings = {
 	Strategy='MstrMelee'
@@ -51,6 +49,7 @@ profile.OnUnload = function()
 end
 
 profile.HandleCommand = function(args)
+	common_profile.HandleCommand(args, gFunc, settings)
 end
 
 profile.HandleDefault = function()

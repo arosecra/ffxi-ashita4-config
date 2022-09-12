@@ -1,6 +1,6 @@
 /lac disable Main
 /wait 1
-/equip Main "Chastisers"
+/equip Main 
 /wait 1
 /equip Main "Condemners"
 /wait 1
