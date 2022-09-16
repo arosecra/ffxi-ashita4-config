@@ -105,6 +105,23 @@ local sets = {
         Legs = 'Assid. Pants +1',
         Feet = { Name = 'Gende. Galosh. +1', Augment = { [1] = 'Magic dmg. taken -4%', [2] = 'Phys. dmg. taken -4%', [3] = '"Cure" spellcasting time -4%' } },
     },
+    Enfeebling_Magic = {
+        Main = { Name = 'Nibiru Cudgel', AugPath='B' },
+        Sub = 'Sors Shield',
+        Ammo = 'Clarus Stone',
+        Head = 'Arbatel Bonnet +2',
+        Neck = 'Sanctity Necklace',
+        Ear1 = 'Gwati Earring',
+        Ear2 = 'Lifestorm Earring',
+        Body = 'Arbatel Gown +2',
+        Hands = 'Arbatel Bracers +2',
+        Ring1 = 'Echad Ring',
+        Ring2 = 'Haoma\'s Ring',
+        Back = 'Swith Cape +1',
+        Waist = 'Acuity Belt',
+        Legs = 'Acad. Pants +2',
+        Feet = 'Jhakri Pigaches +1',
+    },
 };
 
 local settings = {

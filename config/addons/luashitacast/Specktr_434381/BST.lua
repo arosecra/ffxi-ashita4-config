@@ -1,9 +1,21 @@
 local profile = {};
 local sets = {
     TP_MstrMelee = {
-        Main = 'Aymur',
-        Sub = { Name = 'Beatific Shield +1', Augment = { [1] = 'Phys. dmg. taken -4%', [2] = 'Spell interruption rate down -10%' } },
-        Ammo = 'Livid Broth',
+        Ammo = 'Ginsen',
+        Head = { Name = 'Ankusa Helm +3', AugTrial=5458 },
+        Neck = 'Shulmanu Collar',
+        Ear1 = 'Cessance Earring',
+        Ear2 = { Name = 'Nukumi Earring', Augment = { [1] = 'Accuracy+6', [2] = 'Mag. Acc.+6' } },
+        Body = 'Nukumi Gausape +2',
+        Hands = { Name = 'Ankusa Gloves +3', AugTrial=5502 },
+        Ring1 = 'Epona\'s Ring',
+        Ring2 = 'Apate Ring',
+        Back = { Name = 'Artio\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+20', [2] = 'Pet: R.Atk.+20', [3] = 'Pet: Haste+10', [4] = 'Pet: Attack+10', [5] = 'Pet: Rng.Atk.+10', [6] = 'Pet: Acc.+20', [7] = 'Pet: Atk.+20' } },
+        Waist = 'Isa Belt',
+        Legs = { Name = 'Ankusa Trousers +3', AugTrial=5524 },
+        Feet = { Name = 'Ankusa Gaiters +3', AugTrial=5546 },
+    },
+    TP_PetOnly = {
         Head = { Name = 'Anwig Salade', Augment = { [1] = 'Accuracy+3', [2] = 'Pet: Damage taken -10%', [3] = 'Attack+3', [4] = 'Pet: Haste+5' } },
         Neck = { Name = 'Loricate Torque +1', AugPath='A' },
         Ear1 = 'Handler\'s Earring',
@@ -18,9 +30,6 @@ local sets = {
         Feet = { Name = 'Taeon Boots', Augment = { [1] = 'Pet: Rng. Acc.+24', [2] = 'Pet: Damage taken -4%', [3] = 'Pet: Accuracy+24', [4] = 'Pet: "Dbl. Atk."+5' } },
     },
     FastCast = {
-        Main = 'Aymur',
-        Sub = { Name = 'Beatific Shield +1', Augment = { [1] = 'Phys. dmg. taken -4%', [2] = 'Spell interruption rate down -10%' } },
-        Ammo = 'Livid Broth',
         Head = { Name = 'Taeon Chapeau', Augment = '"Fast Cast"+5' },
         Neck = 'Orunmila\'s Torque',
         Ear1 = 'Enchntr. Earring +1',
@@ -35,9 +44,6 @@ local sets = {
         Feet = { Name = 'Taeon Boots', Augment = '"Fast Cast"+5' },
     },
     Primal_Rend = {
-        Main = 'Aymur',
-        Sub = { Name = 'Beatific Shield +1', Augment = { [1] = 'Phys. dmg. taken -4%', [2] = 'Spell interruption rate down -10%' } },
-        Ammo = 'Livid Broth',
         Head = { Name = 'Ankusa Helm +3', AugTrial=5458 },
         Neck = 'Sanctity Necklace',
         Ear1 = 'Thrud Earring',
@@ -62,6 +68,21 @@ local sets = {
     },
     Moving = {
         Ring1 = 'Shneddick Ring',
+    },
+    Onslaught = {
+        Main = 'Guttler',
+        Head = { Name = 'Ankusa Helm +3', AugTrial=5458 },
+        Neck = 'Fotia Gorget',
+        Ear1 = 'Thrud Earring',
+        Ear2 = { Name = 'Nukumi Earring', Augment = { [1] = 'Accuracy+6', [2] = 'Mag. Acc.+6' } },
+        Body = 'Nukumi Gausape +2',
+        Hands = 'Totemic Gloves +2',
+        Ring1 = 'Begrudging Ring',
+        Ring2 = 'Apate Ring',
+        Back = { Name = 'Artio\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+20', [2] = 'Pet: R.Atk.+20', [3] = 'Pet: Haste+10', [4] = 'Pet: Attack+10', [5] = 'Pet: Rng.Atk.+10', [6] = 'Pet: Acc.+20', [7] = 'Pet: Atk.+20' } },
+        Waist = 'Fotia Belt',
+        Legs = { Name = 'Ankusa Trousers +3', AugTrial=5524 },
+        Feet = { Name = 'Ankusa Gaiters +3', AugTrial=5546 },
     },
 };
 

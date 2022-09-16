@@ -82,6 +82,7 @@ local sets = {
         Feet = { Name = 'Herculean Boots', Augment = { [1] = '"Rapid Shot"+3', [2] = '"Treasure Hunter"+1', [3] = 'Accuracy+1', [4] = '"Mag. Atk. Bns."+10', [5] = 'Attack+1', [6] = 'Mag. Acc.+10' } },
     },
     Maneuver = {
+        Main = 'Midnights',
         Neck = 'Buffoon\'s Collar',
         Ear2 = 'Karagoz Earring',
         Body = 'Kara. Farsetto +1',

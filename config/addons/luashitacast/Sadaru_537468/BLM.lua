@@ -1,22 +1,5 @@
 local profile = {};
 local sets = {
-    Elemental_Magic = {
-        Main = { Name = 'Gada', Augment = { [1] = 'STR+2', [2] = '"Mag. Atk. Bns."+24', [3] = 'Mag. Acc.+22', [4] = '"Cure" potency +3%' } },
-        Sub = 'Culminus',
-        Ammo = { Name = 'Ghastly Tathlum +1', AugPath='A' },
-        Head = 'Jhakri Coronal',
-        Neck = 'Sanctity Necklace',
-        Ear1 = 'Barkaro. Earring',
-        Ear2 = 'Friomisi Earring',
-        Body = { Name = 'Merlinic Jubbah', Augment = { [1] = 'INT+6', [2] = 'Mag. Acc.+11', [3] = 'Magic burst dmg.+8%', [4] = '"Mag. Atk. Bns."+12' } },
-        Hands = { Name = 'Amalric Gages +1', AugPath='D' },
-        Ring1 = { Name = 'Metamor. Ring +1', AugPath='A' },
-        Ring2 = 'Mujin Band',
-        Back = 'Nexus Cape',
-        Waist = { Name = 'Acuity Belt +1', AugPath='A' },
-        Legs = { Name = 'Merlinic Shalwar', Augment = { [1] = 'Mag. Acc.+13', [2] = 'Accuracy+4', [3] = '"Mag. Atk. Bns."+10', [4] = 'Magic burst dmg.+8%', [5] = 'INT+3' } },
-        Feet = { Name = 'Merlinic Crackows', Augment = { [1] = 'INT+4', [2] = 'Mag. Acc.+6', [3] = 'Magic burst dmg.+11%', [4] = '"Mag. Atk. Bns."+6' } },
-    },
     FastCast = {
         Sub = 'Chanter\'s Shield',
         Head = { Name = 'Merlinic Hood', Augment = { [1] = '"Fast Cast"+6', [2] = 'Mag. Acc.+6' } },
@@ -48,6 +31,23 @@ local sets = {
         Waist = { Name = 'Acuity Belt +1', AugPath='A' },
         Legs = 'Assid. Pants +1',
         Feet = 'Jhakri Pigaches +2',
+    },
+    Elemental_Magic = {
+        Main = { Name = 'Gada', Augment = { [1] = 'STR+2', [2] = '"Mag. Atk. Bns."+24', [3] = 'Mag. Acc.+22', [4] = '"Cure" potency +3%' } },
+        Sub = 'Culminus',
+        Ammo = { Name = 'Ghastly Tathlum +1', AugPath='A' },
+        Head = 'Ea Hat +1',
+        Neck = 'Sanctity Necklace',
+        Ear1 = 'Barkaro. Earring',
+        Ear2 = 'Friomisi Earring',
+        Body = 'Ea Houppe. +1',
+        Hands = { Name = 'Amalric Gages +1', AugPath='D' },
+        Ring1 = { Name = 'Metamor. Ring +1', AugPath='A' },
+        Ring2 = 'Mujin Band',
+        Back = 'Nexus Cape',
+        Waist = { Name = 'Acuity Belt +1', AugPath='A' },
+        Legs = 'Ea Slops +1',
+        Feet = { Name = 'Merlinic Crackows', Augment = { [1] = 'INT+4', [2] = 'Mag. Acc.+6', [3] = 'Magic burst dmg.+11%', [4] = '"Mag. Atk. Bns."+6' } },
     },
 };
 

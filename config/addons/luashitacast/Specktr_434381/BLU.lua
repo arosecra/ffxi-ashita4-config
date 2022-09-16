@@ -1,6 +1,6 @@
 local profile = {};
 local sets = {
-    Blue_Magic = {
+    Blue_Magic2 = {
         Main = 'Naegling',
         Sub = { Name = 'Nibiru Cudgel', AugPath='B' },
         Ammo = 'Ghastly Tathlum +1',
@@ -148,7 +148,7 @@ local sets = {
     temp = {
         Main = 'Naegling',
     },
-    Blue_Magic2 = {
+    Blue_Magic = {
         Main = 'Naegling',
         Sub = { Name = 'Nibiru Cudgel', AugPath='B' },
         Ammo = { Name = 'Ghastly Tathlum +1', AugPath='A' },

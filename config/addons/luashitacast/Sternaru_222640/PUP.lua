@@ -60,6 +60,13 @@ local sets = {
         Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+20', [2] = 'Pet: R.Atk.+20', [3] = 'Pet: Haste+10', [4] = 'Pet: Acc.+20', [5] = 'Pet: Atk.+20' } },
         Waist = 'Isa Belt',
     },
+    Maneuver = {
+        Neck = 'Buffoon\'s Collar',
+        Ear2 = 'Karagoz Earring',
+        Body = 'Kara. Farsetto +1',
+        Hands = 'Foire Dastanas +1',
+        Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+20', [2] = 'Pet: R.Atk.+20', [3] = 'Pet: Haste+10', [4] = 'Pet: Acc.+20', [5] = 'Pet: Atk.+20' } },
+    },
     TP_Overdrive = {
         Head = { Name = 'Anwig Salade', Augment = { [1] = 'Accuracy+3', [2] = 'Pet: Damage taken -10%', [3] = 'Attack+3', [4] = 'Pet: Haste+5' } },
         Body = { Name = 'Taeon Tabard', Augment = { [1] = 'Pet: Attack+22', [2] = 'Pet: Damage taken -4%', [3] = 'Pet: "Dbl. Atk."+3', [4] = 'Pet: Rng.Atk.+22' } },
