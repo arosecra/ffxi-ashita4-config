@@ -17,6 +17,7 @@ local sets = {
         Body = 'Pitre Tobe +3',
     },
     TP_PetOnly = {
+        Main = { Name = 'Xiucoatl', AugPath='C' },
         Head = { Name = 'Anwig Salade', Augment = { [1] = 'Accuracy+3', [2] = 'Pet: Damage taken -10%', [3] = 'Attack+3', [4] = 'Pet: Haste+5' } },
         Body = { Name = 'Taeon Tabard', Augment = { [1] = 'Pet: Damage taken -4%', [2] = '"Fast Cast"+5', [3] = 'Pet: Evasion+23' } },
         Hands = { Name = 'Taeon Gloves', Augment = { [1] = 'Pet: Rng. Acc.+23', [2] = 'Pet: Damage taken -4%', [3] = 'Pet: Accuracy+23', [4] = 'Pet: "Dbl. Atk."+5' } },
@@ -31,6 +32,7 @@ local sets = {
         Waist = 'Isa Belt',
     },
     TP_PetMelee = {
+        Main = { Name = 'Xiucoatl', AugPath='C' },
         Range = 'Animator P +1',
         Head = { Name = 'Anwig Salade', Augment = { [1] = 'Accuracy+3', [2] = 'Pet: Damage taken -10%', [3] = 'Attack+3', [4] = 'Pet: Haste+5' } },
         Body = 'Pitre Tobe +3',
@@ -49,6 +51,7 @@ local sets = {
         Ring1 = 'Shneddick Ring',
     },
     WS = {
+        Main = { Name = 'Xiucoatl', AugPath='C' },
         Head = 'Tali\'ah Turban +2',
         Neck = 'Shulmanu Collar',
         Ear1 = 'Brutal Earring',
@@ -63,6 +66,7 @@ local sets = {
         Feet = { Name = 'Herculean Boots', Augment = { [1] = 'Accuracy+24', [2] = 'Attack+9', [3] = '"Triple Atk."+4' } },
     },
     TP_119PetOnly = {
+        Main = { Name = 'Xiucoatl', AugPath='C' },
         Head = { Name = 'Taeon Chapeau', Augment = { [1] = 'Pet: Damage taken -4%', [2] = '"Fast Cast"+5', [3] = '"Mag. Atk. Bns."+15' } },
         Body = { Name = 'Taeon Tabard', Augment = { [1] = 'Pet: Damage taken -4%', [2] = '"Fast Cast"+5', [3] = 'Pet: Evasion+23' } },
         Hands = { Name = 'Taeon Gloves', Augment = { [1] = 'Pet: Rng. Acc.+23', [2] = 'Pet: Damage taken -4%', [3] = 'Pet: Accuracy+23', [4] = 'Pet: "Dbl. Atk."+5' } },
@@ -82,14 +86,15 @@ local sets = {
         Feet = { Name = 'Herculean Boots', Augment = { [1] = '"Rapid Shot"+3', [2] = '"Treasure Hunter"+1', [3] = 'Accuracy+1', [4] = '"Mag. Atk. Bns."+10', [5] = 'Attack+1', [6] = 'Mag. Acc.+10' } },
     },
     Maneuver = {
-        Main = 'Midnights',
+        Main = { Name = 'Midnights', AugPath='D' },
         Neck = 'Buffoon\'s Collar',
         Ear2 = 'Karagoz Earring',
-        Body = 'Kara. Farsetto +1',
+        Body = 'Kara. Farsetto +2',
         Hands = 'Foire Dastanas +1',
         Back = { Name = 'Visucius\'s Mantle', Augment = { [1] = 'Pet: R.Acc.+20', [2] = 'Pet: R.Atk.+20', [3] = 'Pet: Haste+10', [4] = 'Pet: Attack+10', [5] = 'Pet: Rng.Atk.+10', [6] = 'Pet: Acc.+20', [7] = 'Pet: Atk.+20' } },
     },
     TP_MstrMelee = {
+        Main = { Name = 'Xiucoatl', AugPath='C' },
         Head = 'Tali\'ah Turban +2',
         Neck = 'Shulmanu Collar',
         Ear1 = 'Cessance Earring',

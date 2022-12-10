@@ -2,6 +2,6 @@
 /wait 1
 /equip Main 
 /wait 1
-/equip Main "Condemners"
+/equip Main "Xiucoatl"
 /wait 1
 /lac enable Main

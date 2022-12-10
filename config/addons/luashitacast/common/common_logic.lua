@@ -534,6 +534,8 @@ common_logic.HandleMidcast = function(sets, gFunc, gData, gState, gSettings, set
 			actionFamily = "Protect"
 		elseif string.match(actionName, 'Regen') then
 			actionFamily = "Regen"
+		elseif string.match(actionName, 'Aspir') then
+			actionFamily = "Aspir"
 		elseif string.match(actionName, 'Shot') then
 			actionFamily = "QuickDraw"
 			print(actionFamily)
