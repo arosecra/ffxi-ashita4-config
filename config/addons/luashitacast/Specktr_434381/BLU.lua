@@ -1,5 +1,5 @@
 local profile = {};
-local sets = {
+profile.Sets = {
     Blue_Magic2 = {
         Main = 'Naegling',
         Sub = { Name = 'Nibiru Cudgel', AugPath='B' },
@@ -56,6 +56,7 @@ local sets = {
         Head = { Name = 'Luh. Keffiyeh +1', AugTrial=5305 },
         Neck = 'Deceiver\'s Torque',
         Ear1 = 'Njordr Earring',
+        Ear2 = { Name = 'Hashi. Earring +1', Augment = { [1] = 'Accuracy+14', [2] = '"Dbl.Atk."+5', [3] = 'Mag. Acc.+14' } },
         Body = 'Assim. Jubbah +3',
         Hands = 'Rawhide Gloves',
         Back = { Name = 'Cornflower Cape', Augment = { [1] = 'Accuracy+4', [2] = 'Blue Magic skill +8', [3] = 'MP+29', [4] = 'DEX+1' } },
@@ -86,7 +87,7 @@ local sets = {
         Head = 'Jhakri Coronal +2',
         Neck = 'Sanctity Necklace',
         Ear1 = 'Cessance Earring',
-        Ear2 = 'Brutal Earring',
+        Ear2 = { Name = 'Hashi. Earring +1', Augment = { [1] = 'Accuracy+14', [2] = '"Dbl.Atk."+5', [3] = 'Mag. Acc.+14' } },
         Body = { Name = 'Amalric Doublet +1', AugPath='A' },
         Hands = 'Jhakri Cuffs +2',
         Ring1 = 'Begrudging Ring',
@@ -103,7 +104,7 @@ local sets = {
         Head = 'Jhakri Coronal +2',
         Neck = 'Deceiver\'s Torque',
         Ear1 = 'Cessance Earring',
-        Ear2 = 'Brutal Earring',
+        Ear2 = { Name = 'Hashi. Earring +1', Augment = { [1] = 'Accuracy+14', [2] = '"Dbl.Atk."+5', [3] = 'Mag. Acc.+14' } },
         Body = 'Jhakri Robe +2',
         Hands = { Name = 'Herculean Gloves', Augment = { [1] = '"Mag. Atk. Bns."+5', [2] = 'Mag. Acc.+33', [3] = 'Accuracy+9', [4] = 'CHR+3', [5] = 'Attack+9', [6] = '"Refresh"+2' } },
         Ring1 = 'Begrudging Ring',
@@ -135,7 +136,7 @@ local sets = {
         Head = { Name = 'Adhemar Bonnet +1', AugPath='B' },
         Neck = 'Asperity Necklace',
         Ear1 = 'Cessance Earring',
-        Ear2 = 'Brutal Earring',
+        Ear2 = { Name = 'Hashi. Earring +1', Augment = { [1] = 'Accuracy+14', [2] = '"Dbl.Atk."+5', [3] = 'Mag. Acc.+14' } },
         Body = { Name = 'Adhemar Jacket +1', AugPath='B' },
         Hands = { Name = 'Herculean Gloves', Augment = { [1] = 'Accuracy+24', [2] = 'CHR+7', [3] = 'Attack+9', [4] = '"Triple Atk."+4' } },
         Ring1 = 'Apate Ring',
@@ -144,9 +145,6 @@ local sets = {
         Waist = { Name = 'Sailfi Belt +1', AugPath='A' },
         Legs = { Name = 'Samnuha Tights', Augment = { [1] = 'STR+8', [2] = '"Dbl.Atk."+3', [3] = '"Triple Atk."+2', [4] = 'DEX+9' } },
         Feet = { Name = 'Herculean Boots', Augment = { [1] = 'Accuracy+24', [2] = 'Attack+9', [3] = '"Triple Atk."+4' } },
-    },
-    temp = {
-        Main = 'Naegling',
     },
     Blue_Magic = {
         Main = 'Naegling',
@@ -157,7 +155,7 @@ local sets = {
         Ear1 = 'Friomisi Earring',
         Ear2 = 'Hecate\'s Earring',
         Body = 'Hashishin Mintan +3',
-        Hands = 'Hashi. Bazu. +2',
+        Hands = 'Hashi. Bazu. +3',
         Ring1 = 'Acumen Ring',
         Ring2 = { Name = 'Metamor. Ring +1', AugPath='A' },
         Back = { Name = 'Rosmerta\'s Cape', Augment = { [1] = '"Mag. Atk. Bns."+10', [2] = 'Mag. Acc+20', [3] = 'Magic Damage +20', [4] = 'INT+30' } },
@@ -167,18 +165,19 @@ local sets = {
     },
 };
 
+profile.Packer = {
+};
+
 local settings = {
 	Strategy='MstrMelee'
 }
 local common_profile = gFunc.LoadFile('common/common_logic.lua');
-profile.Sets = sets;
 
 profile.OnLoad = function()
-    gSettings.AllowAddSet = true;
+    common_profile.OnLoad(gSettings, gFunc, settings)
 end
 
 profile.OnUnload = function()
-    common_profile.OnUnload(sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleCommand = function(args)
@@ -186,35 +185,35 @@ profile.HandleCommand = function(args)
 end
 
 profile.HandleDefault = function()
-    common_profile.HandleDefault(sets, gFunc, gData, gState, gSettings, settings)
+    common_profile.HandleDefault(profile.Sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleAbility = function()
-    common_profile.HandleAbility(sets, gFunc, gData, gState, gSettings, settings)
+    common_profile.HandleAbility(profile.Sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleItem = function()
-    common_profile.HandleItem(sets, gFunc, gData, gState, gSettings, settings)
+    common_profile.HandleItem(profile.Sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandlePrecast = function()
-    common_profile.HandlePrecast(sets, gFunc, gData, gState, gSettings, settings)
+    common_profile.HandlePrecast(profile.Sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleMidcast = function()
-    common_profile.HandleMidcast(sets, gFunc, gData, gState, gSettings, settings)
+    common_profile.HandleMidcast(profile.Sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandlePreshot = function()
-    common_profile.HandlePreshot(sets, gFunc, gData, gState, gSettings, settings)
+    common_profile.HandlePreshot(profile.Sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleMidshot = function()
-    common_profile.HandleMidshot(sets, gFunc, gData, gState, gSettings, settings)
+    common_profile.HandleMidshot(profile.Sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleWeaponskill = function()
-    common_profile.HandleWeaponskill(sets, gFunc, gData, gState, gSettings, settings)
+    common_profile.HandleWeaponskill(profile.Sets, gFunc, gData, gState, gSettings, settings)
 end
 
 return profile;

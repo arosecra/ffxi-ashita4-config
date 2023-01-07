@@ -1,11 +1,11 @@
 local profile = {};
-local sets = {
+profile.Sets = {
     TP_MstrMelee = {
         Ammo = 'Staunch Tathlum',
         Head = { Name = 'Souv. Schaller +1', AugPath='D', Priority=2},
         Neck = 'Warder\'s Charm +1',
         Ear1 = { Name = 'Tuisto Earring', Priority=2},
-        Ear2 = { Name = 'Chev. Earring', Augment = { [1] = 'Accuracy+6', [2] = 'Mag. Acc.+6' } },
+        Ear2 = { Name = 'Chev. Earring +1', Augment = { [1] = 'Accuracy+12', [2] = 'Damage taken-4%', [3] = 'Mag. Acc.+12' } },
         Body = { Name = 'Souv. Cuirass +1', AugPath='D', Priority=2},
         Hands = { Name = 'Souv. Handsch. +1', AugPath='D', Priority=2},
         Ring1 = { Name = 'Moonbeam Ring', Priority=2},
@@ -95,19 +95,21 @@ local sets = {
     },
 };
 
-sets.Enhancing_Magic = sets.SIRD;
-sets.Cure = sets.SIRD;
+profile.Sets.Enhancing_Magic = profile.Sets.SIRD;
+profile.Sets.Cure = profile.Sets.SIRD;
+
+profile.Packer = {
+};
 
 local settings = {
 	Strategy='MstrMelee',
-	IdleMain='Nixxer',
-	IdleSub='Aegis'
+    IdleMain="Nixxer",
+    IdleSub="Aegis"
 }
 local common_profile = gFunc.LoadFile('common/common_logic.lua');
-profile.Sets = sets;
 
 profile.OnLoad = function()
-    gSettings.AllowAddSet = true;
+    common_profile.OnLoad(gSettings, gFunc, settings)
 end
 
 profile.OnUnload = function()
@@ -118,35 +120,35 @@ profile.HandleCommand = function(args)
 end
 
 profile.HandleDefault = function()
-    common_profile.HandleDefault(sets, gFunc, gData, gState, gSettings, settings)
+    common_profile.HandleDefault(profile.Sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleAbility = function()
-    common_profile.HandleAbility(sets, gFunc, gData, gState, gSettings, settings)
+    common_profile.HandleAbility(profile.Sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleItem = function()
-    common_profile.HandleItem(sets, gFunc, gData, gState, gSettings, settings)
+    common_profile.HandleItem(profile.Sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandlePrecast = function()
-    common_profile.HandlePrecast(sets, gFunc, gData, gState, gSettings, settings)
+    common_profile.HandlePrecast(profile.Sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleMidcast = function()
-    common_profile.HandleMidcast(sets, gFunc, gData, gState, gSettings, settings)
+    common_profile.HandleMidcast(profile.Sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandlePreshot = function()
-    common_profile.HandlePreshot(sets, gFunc, gData, gState, gSettings, settings)
+    common_profile.HandlePreshot(profile.Sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleMidshot = function()
-    common_profile.HandleMidshot(sets, gFunc, gData, gState, gSettings, settings)
+    common_profile.HandleMidshot(profile.Sets, gFunc, gData, gState, gSettings, settings)
 end
 
 profile.HandleWeaponskill = function()
-    common_profile.HandleWeaponskill(sets, gFunc, gData, gState, gSettings, settings)
+    common_profile.HandleWeaponskill(profile.Sets, gFunc, gData, gState, gSettings, settings)
 end
 
 return profile;

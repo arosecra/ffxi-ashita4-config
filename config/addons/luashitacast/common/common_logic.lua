@@ -403,6 +403,7 @@ common_logic.pact_names = {
 
 common_logic.OnLoad = function(gSettings, gFunc, settings)
     gSettings.AllowAddSet = true;
+	gSettings.AddSetBackups = false;
 end
 
 common_logic.OnUnload = function(sets, gFunc, gData, gState, gSettings, settings)

@@ -45,7 +45,7 @@ profile.Sets = {
         Ring2 = 'Defending Ring',
         Back = { Name = 'Moonbeam Cape', Priority=2 },
         Waist = { Name = 'Steppe Sash', Priority=2 },
-        Legs = 'Eri. Leg Guards +2',
+        Legs = 'Eri. Leg Guards +3',
         Feet = 'Erilaz Greaves +2',
     },
     Dimidiation = {
@@ -79,13 +79,16 @@ profile.Sets = {
     }
 };
 
+profile.Packer = {
+};
+
 local settings = {
 	Strategy='MstrMelee'
 }
 local common_profile = gFunc.LoadFile('common/common_logic.lua');
 
 profile.OnLoad = function()
-    gSettings.AllowAddSet = true;
+    common_profile.OnLoad(gSettings, gFunc, settings)
 end
 
 profile.OnUnload = function()
