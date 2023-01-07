@@ -32,7 +32,7 @@ profile.Sets = {
         Ammo = 'Sapience Orb',
         Head = { Name = 'Carmine Mask +1', AugPath='D' },
         Neck = 'Orunmila\'s Torque',
-        Ear1 = 'Ethereal Earring',
+        Ear1 = 'Loquac. Earring',
         Ear2 = 'Enchntr. Earring +1',
         Body = { Name = 'Taeon Tabard', Augment = '"Fast Cast"+5' },
         Hands = { Name = 'Leyline Gloves', Augment = { [1] = 'Accuracy+14', [2] = '"Mag. Atk. Bns."+13', [3] = '"Fast Cast"+2', [4] = 'Mag. Acc.+13' } },
