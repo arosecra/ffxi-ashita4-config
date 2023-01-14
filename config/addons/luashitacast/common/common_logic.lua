@@ -429,7 +429,10 @@ common_logic.HandleDefault = function(sets, gFunc, gData, gState, gSettings, set
 		if player.IsMoving then
 			gFunc.EquipSet(sets.Moving)
 		else
-			gFunc.EquipSet('TP_' .. settings.Strategy);
+			local idle = 'TP_' .. settings.Strategy
+			if sets[idle] ~= nil then
+				gFunc.EquipSet('TP_' .. settings.Strategy);
+			end
 			
 			if settings.IdleMain ~= nil and sets[settings.IdleMain] ~= nil then
 				gFunc.EquipSet(sets[settings.IdleMain])

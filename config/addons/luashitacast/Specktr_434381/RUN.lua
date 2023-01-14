@@ -1,19 +1,17 @@
 local profile = {};
 profile.Sets = {
     TP_MstrMelee = {
-        Main = 'Trial Blade',
-        Sub = 'Nepenthe Grip',
         Ammo = 'Staunch Tathlum',
         Head = { Name = 'Adhemar Bonnet +1', AugPath='B' },
         Neck = 'Sanctity Necklace',
-        Ear1 = 'Ethereal Earring',
+        Ear1 = 'Cessance Earring',
         Ear2 = { Name = 'Erilaz Earring', Augment = { [1] = 'Accuracy+7', [2] = 'Mag. Acc.+7' } },
         Body = { Name = 'Adhemar Jacket +1', AugPath='B' },
         Hands = { Name = 'Herculean Gloves', Augment = { [1] = 'Accuracy+24', [2] = 'CHR+7', [3] = 'Attack+9', [4] = '"Triple Atk."+4' } },
         Ring1 = 'Defending Ring',
-        Ring2 = 'Warp Ring',
+        Ring2 = 'Begrudging Ring',
         Back = 'Ground. Mantle +1',
-        Waist = 'Flume Belt',
+        Waist = { Name = 'Sailfi Belt +1', AugPath='A' },
         Legs = { Name = 'Samnuha Tights', Augment = { [1] = 'STR+8', [2] = '"Dbl.Atk."+3', [3] = '"Triple Atk."+2', [4] = 'DEX+9' } },
         Feet = { Name = 'Herculean Boots', Augment = { [1] = 'Accuracy+24', [2] = 'Attack+9', [3] = '"Triple Atk."+4' } },
     },
@@ -27,8 +25,6 @@ profile.Sets = {
         Feet = { Name = 'Herculean Boots', Augment = { [1] = '"Dbl.Atk."+1', [2] = '"Mag. Atk. Bns."+2', [3] = 'Mag. Acc.+2', [4] = 'Rng.Acc.+6', [5] = 'Phalanx +4', [6] = 'Attack+11', [7] = 'Accuracy+11' } },
     },
     FastCast = {
-        Main = 'Trial Blade',
-        Sub = 'Nepenthe Grip',
         Ammo = 'Sapience Orb',
         Head = { Name = 'Carmine Mask +1', AugPath='D' },
         Neck = 'Orunmila\'s Torque',
