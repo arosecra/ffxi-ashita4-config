@@ -46,7 +46,7 @@ profile.Sets = {
         Back = { Name = 'Moonbeam Cape', Priority=2 },
         Waist = { Name = 'Steppe Sash', Priority=2 },
         Legs = 'Eri. Leg Guards +3',
-        Feet = 'Erilaz Greaves +2',
+        Feet = 'Erilaz Greaves +3',
     },
     Dimidiation = {
         Ammo = 'Floestone',

@@ -14,7 +14,7 @@ profile.Sets = {
         Main = { Name = 'Nibiru Cudgel', AugPath='B' },
         Sub = 'Bolelabunga',
         Ammo = 'Moogle Moolah',
-        Head = 'Hashishin Kavuk +2',
+        Head = 'Hashishin Kavuk +3',
         Neck = 'Sanctity Necklace',
         Ear1 = 'Friomisi Earring',
         Ear2 = 'Gwati Earring',
@@ -25,12 +25,12 @@ profile.Sets = {
         Back = 'Cornflower Cape',
         Waist = 'Acuity Belt',
         Legs = { Name = 'Amalric Slops +1', AugPath='A' },
-        Feet = 'Hashi. Basmak +2',
+        Feet = 'Hashi. Basmak +3',
     },
     TP_MstrMelee = {
         Main = { Name = 'Nibiru Cudgel', AugPath='B' },
         Sub = 'Bolelabunga',
-        Head = 'Hashishin Kavuk +2',
+        Head = 'Hashishin Kavuk +3',
         Neck = 'Sanctity Necklace',
         Ear1 = 'Friomisi Earring',
         Ear2 = 'Gwati Earring',
@@ -41,7 +41,7 @@ profile.Sets = {
         Back = 'Cornflower Cape',
         Waist = 'Acuity Belt',
         Legs = { Name = 'Amalric Slops +1', AugPath='A' },
-        Feet = 'Hashi. Basmak +2',
+        Feet = 'Hashi. Basmak +3',
     },
 };
 

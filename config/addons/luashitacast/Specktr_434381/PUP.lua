@@ -54,7 +54,6 @@ profile.Sets = {
         Main = { Name = 'Xiucoatl', AugPath='C' },
         Head = 'Tali\'ah Turban +2',
         Neck = 'Shulmanu Collar',
-        Ear1 = 'Brutal Earring',
         Ear2 = 'Cessance Earring',
         Body = 'Tali\'ah Manteel +2',
         Hands = { Name = 'Herculean Gloves', Augment = { [1] = 'Accuracy+24', [2] = 'CHR+7', [3] = 'Attack+9', [4] = '"Triple Atk."+4' } },

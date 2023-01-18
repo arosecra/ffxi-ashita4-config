@@ -30,7 +30,7 @@ profile.Sets = {
     },
     MidShot = {
         Ammo = 'Bronze Bullet',
-        Head = 'Chass. Tricorne +2',
+        Head = 'Chass. Tricorne +3',
         Neck = 'Sanctity Necklace',
         Ear1 = 'Handler\'s Earring',
         Ear2 = 'Handler\'s Earring +1',
@@ -58,7 +58,7 @@ profile.Sets = {
         Feet = 'Meg. Jam. +2',
     },
     TP_MstrMelee = {
-        Head = 'Chass. Tricorne +2',
+        Head = 'Chass. Tricorne +3',
         Neck = 'Sanctity Necklace',
         Ear1 = 'Handler\'s Earring',
         Ear2 = 'Handler\'s Earring +1',

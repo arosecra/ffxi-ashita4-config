@@ -4,7 +4,6 @@ profile.Sets = {
         Main = 'Ice Lance',
         Neck = 'Fotia Gorget',
         Ear1 = 'Ethereal Earring',
-        Ear2 = 'Brutal Earring',
         Body = 'Raptor Jerkin',
         Hands = 'Stone Mufflers',
         Ring1 = 'Defending Ring',
